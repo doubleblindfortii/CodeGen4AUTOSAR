@@ -1,0 +1,22 @@
+#I:\学习\科研\论文\实验&进展\autosar\autosar_swc_expfcns_autosar_rtw\stub\Rte_ASWC.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IRead_Runnable1_RPort_DE1
+-Rte_IStatus_Runnable1_RPort_DE1
+-Rte_IWrite_Runnable1_PPort_DE1
+-Rte_IWriteRef_Runnable1_PPort_DE1
+-Rte_IWrite_Runnable2_PPort_DE3
+-Rte_IWriteRef_Runnable2_PPort_DE3
+-Rte_IWrite_Runnable2_PPort_DE4
+-Rte_IWriteRef_Runnable2_PPort_DE4
+-Rte_IRead_Runnable3_RPort_DE2
+-Rte_IStatus_Runnable3_RPort_DE2
+-Rte_IWrite_Runnable3_PPort_DE2
+-Rte_IWriteRef_Runnable3_PPort_DE2
+-Rte_IrvIRead_Runnable1_IRV3
+-Rte_IrvIWrite_Runnable1_IRV1
+-Rte_IrvIRead_Runnable2_IRV1
+-Rte_IrvIRead_Runnable2_IRV2
+-Rte_IrvIWrite_Runnable2_IRV4
+-Rte_IrvIRead_Runnable3_IRV4
+-Rte_IrvIWrite_Runnable3_IRV2
+-Rte_IrvIWrite_Runnable3_IRV3

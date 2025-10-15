@@ -1,0 +1,18 @@
+auto start = std::chrono::steady_clock::now();
+
+arxml文件生成和c代码生成的代码
+
+
+auto end = std::chrono::steady_clock::now();
+std::chrono::duration<double> elapsed_seconds = end - start;
+double durationInSeconds = elapsed_seconds.count();
+
+std::string logPath = util4ConfigXML->getWorkPath() + "\\.." + "\\AR\\temp\\" + util4ConfigXML->getSwcComponentName() + "_log.txt";
+std::ofstream logFile(logPath, std::ios::app);
+if (logFile.is_open()) {
+	logFile << "Code generation took: " << std::fixed << std::setprecision(3) << durationInSeconds << " s" << std::endl;
+	logFile.close();
+}
+else {
+	std::cerr << "Failed to write log to: " << logPath << std::endl;
+}

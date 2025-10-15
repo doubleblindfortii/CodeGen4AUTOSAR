@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_monitor
+Model version                : 4.0
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sat Aug 09 15:13:29 2025
+Model Checksum               : 2711564347 3773125063 2913441498 1590926909
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <SWC-IMPLEMENTATION UUID="e5a48df4-a8fd-5680-5b0b-fd621807e6e9">
+                            <SHORT-NAME>ThrottlePositionMonitor_imp</SHORT-NAME>
+                            <CODE-DESCRIPTORS>
+                                <CODE>
+                                    <SHORT-NAME>Code</SHORT-NAME>
+                                    <ARTIFACT-DESCRIPTORS>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_monitor_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_monitor_data_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_monitor_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_monitor_private_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_monitor_types_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                    </ARTIFACT-DESCRIPTORS>
+                                </CODE>
+                            </CODE-DESCRIPTORS>
+                            <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                            <RESOURCE-CONSUMPTION>
+                                <SHORT-NAME>RsrcCons_autosar_swc_monitor</SHORT-NAME>
+                            </RESOURCE-CONSUMPTION>
+                            <SW-VERSION>4.0.1</SW-VERSION>
+                            <USED-CODE-GENERATOR>Embedded Coder 7.6 (R2021a) 14-Nov-2020</USED-CODE-GENERATOR>
+                            <VENDOR-ID>0</VENDOR-ID>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Company/Components/ThrottlePositionMonitor/ThrottlePositionMonitor_InternalBehavior</BEHAVIOR-REF>
+                        </SWC-IMPLEMENTATION>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

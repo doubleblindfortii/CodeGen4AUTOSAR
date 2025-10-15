@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Auto generated XML Component Description for model 
+        Model version                : 1.42                
+        Author                       : wumbuk              
+        XML source code generated on : 2025-08-13,16:20:18
+        -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <SWC-TIMING UUID="c1c039bc-7347-409c-a32a-a5bdc9b866b5">
+                    <SHORT-NAME>ThrottlePositionSensor_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="dd7776fd-4e2a-40ec-ae53-fb5b9a95c83a">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="90aabe49-1335-471b-842f-80781bbf53b4">
+                                    <SHORT-NAME>Runnable_Step</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Company/Components/InternalBehaviors/test_IB/Runnable_Step</EXECUTABLE-REF>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Company/Components/InternalBehaviors/test_IB</BEHAVIOR-REF>
+                </SWC-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

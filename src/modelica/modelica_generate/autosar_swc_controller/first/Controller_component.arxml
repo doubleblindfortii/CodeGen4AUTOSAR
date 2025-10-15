@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Auto generated XML Component Description for model 
+    Model version                : 1.42                
+    Author                       : wumbuk              
+    XML source code generated on : 2025-08-13,16:23:40
+    -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Component</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="cc1a53a5-45b4-4bc0-8b26-01504dc005b6">
+                    <SHORT-NAME>Controller</SHORT-NAME>
+                    <PORTS>
+                        <P-PORT-PROTOTYPE UUID="60d7994f-2c1f-4ea7-bab6-3e98fad05c40">
+                            <SHORT-NAME>ThrCmd_Percent</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ThrCmd_Percent/Value_4</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/ThrCmd_Percent</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="a0efa94b-7cf6-48ab-bc0e-b093644b17b0">
+                            <SHORT-NAME>APP_Percent</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_Percent/Value_2</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/APP_Percent</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="e67817c9-8ba6-4ea4-bedb-e68bea15b88f">
+                            <SHORT-NAME>TPS_Percent</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Percent/Value_6</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_Percent</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="29af571e-2107-4e59-908c-6ee3a4ddb266">
+                            <SHORT-NAME>test_IB</SHORT-NAME>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="1a3f1d20-4132-4e7c-b919-c5d3b0deec98">
+                                    <SHORT-NAME>Event_Runnable_Step</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE_ENTITY">/Component/InternalBehaviors/test_IB/Runnable_Step</START-ON-EVENT-REF>
+                                    <PERIOD>1</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <IMPLICIT-INTER-RUNNABLE-VARIABLES/>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="5f548637-762f-49f4-9c51-b323d4413838">
+                                    <SHORT-NAME>Controller_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SYMBOL>Controller_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="932ff7bf-44cf-4002-9ec4-dc6b135e551b">
+                                    <SHORT-NAME>Runnable_Step</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="3539dda9-fb2d-408f-9e38-b0c4f37c7d98">
+                                            <SHORT-NAME>IN_APP_Percent_Value_2</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">Component/Controller/APP_Percent</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_Percent/Value_2</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="69c70fc1-8e59-422d-b55c-14c8149e3fef">
+                                            <SHORT-NAME>IN_TPS_Percent_Value_6</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">Component/Controller/TPS_Percent</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Percent/Value_6</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="079b1ce5-b8ad-4c68-b72a-bb8a4571bec1">
+                                            <SHORT-NAME>OUT_ThrCmd_Percent_Value_4</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">Component/Controller/ThrCmd_Percent</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ThrCmd_Percent/Value_4</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <SYMBOL>Runnable_Step</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                            <PER-INSTANCE-PARAMETERS/>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

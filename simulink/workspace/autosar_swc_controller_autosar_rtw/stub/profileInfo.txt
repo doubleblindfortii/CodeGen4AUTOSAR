@@ -1,0 +1,6 @@
+#I:\学习\科研\论文\实验&进展\autosar\autosar_swc_controller_autosar_rtw\stub\Rte_Controller.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IRead_Runnable_Step_APP_Percent_Value
+-Rte_IRead_Runnable_Step_TPS_Percent_Value
+-Rte_IWrite_Runnable_Step_ThrCmd_Percent_Value
+-Rte_IWriteRef_Runnable_Step_ThrCmd_Percent_Value

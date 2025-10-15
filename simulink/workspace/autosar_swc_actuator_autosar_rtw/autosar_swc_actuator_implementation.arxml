@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_actuator
+Model version                : 3.1
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sat Aug 09 15:11:20 2025
+Model Checksum               : 548080009 1015218223 2132082298 3325736049
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <SWC-IMPLEMENTATION UUID="5481e095-d6c1-5ee1-bf70-fc2cde315e1b">
+                            <SHORT-NAME>ThrottlePositionActuator_imp</SHORT-NAME>
+                            <CODE-DESCRIPTORS>
+                                <CODE>
+                                    <SHORT-NAME>Code</SHORT-NAME>
+                                    <ARTIFACT-DESCRIPTORS>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_actuator_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_actuator_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_actuator_private_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_actuator_types_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                    </ARTIFACT-DESCRIPTORS>
+                                </CODE>
+                            </CODE-DESCRIPTORS>
+                            <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                            <RESOURCE-CONSUMPTION>
+                                <SHORT-NAME>RsrcCons_autosar_swc_actuator</SHORT-NAME>
+                            </RESOURCE-CONSUMPTION>
+                            <SW-VERSION>3.1.1</SW-VERSION>
+                            <USED-CODE-GENERATOR>Embedded Coder 7.6 (R2021a) 14-Nov-2020</USED-CODE-GENERATOR>
+                            <VENDOR-ID>0</VENDOR-ID>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Company/Components/ThrottlePositionActuator/ThrottlePositionActuator_InternalBehavior</BEHAVIOR-REF>
+                        </SWC-IMPLEMENTATION>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

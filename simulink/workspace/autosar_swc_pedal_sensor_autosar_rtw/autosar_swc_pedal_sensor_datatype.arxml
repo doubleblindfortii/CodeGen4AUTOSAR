@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_pedal_sensor
+Model version                : 3.1
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sat Aug 09 15:13:51 2025
+Model Checksum               : 3318632161 416337265 2231733167 3273824416
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR_Platform</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>BaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE UUID="52860BDD-31DE-4540-8EB0-7377F9BDE9E3">
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="37BF6EE7-FDA9-4711-AED8-207460D97F1A">
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="32684091-1bad-5ba7-1569-a8e975dc50c1">
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>DataConstrs</SHORT-NAME>
+                    <ELEMENTS>
+                        <DATA-CONSTR UUID="01D3FD6E-C955-4295-BC44-D207C0489C37">
+                            <SHORT-NAME>float32_DataConstr</SHORT-NAME>
+                            <DATA-CONSTR-RULES>
+                                <DATA-CONSTR-RULE>
+                                    <INTERNAL-CONSTRS>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                    </INTERNAL-CONSTRS>
+                                </DATA-CONSTR-RULE>
+                            </DATA-CONSTR-RULES>
+                        </DATA-CONSTR>
+                        <DATA-CONSTR UUID="45EE44FE-5AE6-4B24-9801-D00DA7839719">
+                            <SHORT-NAME>uint16_DataConstr</SHORT-NAME>
+                            <DATA-CONSTR-RULES>
+                                <DATA-CONSTR-RULE>
+                                    <INTERNAL-CONSTRS>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                                    </INTERNAL-CONSTRS>
+                                </DATA-CONSTR-RULE>
+                            </DATA-CONSTR-RULES>
+                        </DATA-CONSTR>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE UUID="17160AE4-7B37-41EE-8E86-46E3F3ABB90B">
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/float32</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/DataConstrs/float32_DataConstr</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="F60FE7EA-D38B-4DD6-AEA0-697BAF98CFA4">
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/DataConstrs/uint16_DataConstr</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <COMPU-METHOD UUID="b98f0604-2556-55b6-3804-fbf37a4811d4">
+                            <SHORT-NAME>Identcl</SHORT-NAME>
+                            <CATEGORY>IDENTICAL</CATEGORY>
+                            <UNIT-REF DEST="UNIT">/AUTOSAR_Platform/ImplementationDataTypes/NoUnit</UNIT-REF>
+                        </COMPU-METHOD>
+                        <UNIT UUID="7d4c198d-c889-5f58-b304-b7a30bd355c3">
+                            <SHORT-NAME>NoUnit</SHORT-NAME>
+                            <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                            <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                        </UNIT>
+                        <IMPLEMENTATION-DATA-TYPE UUID="c2cc2679-3d8f-594d-1b0e-874650c4a60b">
+                            <SHORT-NAME>MyStruct</SHORT-NAME>
+                            <CATEGORY>STRUCTURE</CATEGORY>
+                            <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="a4bdc316-d604-50b7-50e6-004a9c91d5aa">
+                                    <SHORT-NAME>BP1</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/rt_Array_float32_11</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="7f822953-2a65-585a-5512-496227c4c508">
+                                    <SHORT-NAME>Table</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/rt_Array_float32_11</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="3f7bd25a-d0c0-5f09-8151-ef9780703380">
+                            <SHORT-NAME>rt_Array_float32_11</SHORT-NAME>
+                            <CATEGORY>ARRAY</CATEGORY>
+                            <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="f831c3d1-cfce-56b4-a3e2-a1d33cdde90c">
+                                    <SHORT-NAME>rt_Array_float32_11</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <ARRAY-SIZE>11</ARRAY-SIZE>
+                                    <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>ApplDataTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="69996f18-92c5-52a4-c163-ea7394db9a39">
+                                    <SHORT-NAME>Appl_SetpointPercent_LkupTbl</SHORT-NAME>
+                                    <CATEGORY>CURVE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                <SW-CALPRM-AXIS-SET>
+                                                    <SW-CALPRM-AXIS>
+                                                        <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                        <CATEGORY>STD_AXIS</CATEGORY>
+                                                        <SW-AXIS-INDIVIDUAL>
+                                                            <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/Float</INPUT-VARIABLE-TYPE-REF>
+                                                            <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_Platform/ImplementationDataTypes/Identcl</COMPU-METHOD-REF>
+                                                            <SW-MAX-AXIS-POINTS>11</SW-MAX-AXIS-POINTS>
+                                                            <SW-MIN-AXIS-POINTS>11</SW-MIN-AXIS-POINTS>
+                                                            <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/DataConstrs/DC_Float</DATA-CONSTR-REF>
+                                                        </SW-AXIS-INDIVIDUAL>
+                                                    </SW-CALPRM-AXIS>
+                                                </SW-CALPRM-AXIS-SET>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_Platform/ImplementationDataTypes/Identcl</COMPU-METHOD-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/DataConstrs/DC_Float</DATA-CONSTR-REF>
+                                                <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/RecordLayouts/IntCur_f32_f32</SW-RECORD-LAYOUT-REF>
+                                                <VALUE-AXIS-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/Float</VALUE-AXIS-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="32d82db8-53f4-508f-88f3-0701e3cad420">
+                                    <SHORT-NAME>Float</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_Platform/ImplementationDataTypes/Identcl</COMPU-METHOD-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/DataConstrs/DC_Float</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                            </ELEMENTS>
+                            <AR-PACKAGES>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>DataConstrs</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <DATA-CONSTR UUID="8678d1b9-5daa-53e4-8108-c88f1d96f397">
+                                            <SHORT-NAME>DC_Float</SHORT-NAME>
+                                            <DATA-CONSTR-RULES>
+                                                <DATA-CONSTR-RULE>
+                                                    <PHYS-CONSTRS>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                                        <UNIT-REF DEST="UNIT">/AUTOSAR_Platform/ImplementationDataTypes/NoUnit</UNIT-REF>
+                                                    </PHYS-CONSTRS>
+                                                </DATA-CONSTR-RULE>
+                                            </DATA-CONSTR-RULES>
+                                        </DATA-CONSTR>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>RecordLayouts</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <SW-RECORD-LAYOUT UUID="b7339c5b-4e58-5305-5934-9bfc48cb71ef">
+                                            <SHORT-NAME>IntCur_f32_f32</SHORT-NAME>
+                                            <SW-RECORD-LAYOUT-GROUP>
+                                                <SHORT-LABEL>IntCur_f32_f32</SHORT-LABEL>
+                                                <SW-RECORD-LAYOUT-GROUP>
+                                                    <SHORT-LABEL>X</SHORT-LABEL>
+                                                    <CATEGORY>INDEX_INCR</CATEGORY>
+                                                    <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                                    <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                                    <SW-RECORD-LAYOUT-V>
+                                                        <SHORT-LABEL>VALUE</SHORT-LABEL>
+                                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/float64</BASE-TYPE-REF>
+                                                        <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                                                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                                    </SW-RECORD-LAYOUT-V>
+                                                </SW-RECORD-LAYOUT-GROUP>
+                                                <SW-RECORD-LAYOUT-GROUP>
+                                                    <SHORT-LABEL>Val</SHORT-LABEL>
+                                                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                                                    <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                                    <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                                    <SW-RECORD-LAYOUT-V>
+                                                        <SHORT-LABEL>Val</SHORT-LABEL>
+                                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/float64</BASE-TYPE-REF>
+                                                        <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                                                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                                        <SW-RECORD-LAYOUT-V-INDEX>X</SW-RECORD-LAYOUT-V-INDEX>
+                                                    </SW-RECORD-LAYOUT-V>
+                                                </SW-RECORD-LAYOUT-GROUP>
+                                            </SW-RECORD-LAYOUT-GROUP>
+                                        </SW-RECORD-LAYOUT>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                            </AR-PACKAGES>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>DataTypeMappings</SHORT-NAME>
+                            <ELEMENTS>
+                                <DATA-TYPE-MAPPING-SET UUID="eef9f771-f28c-5d50-fbee-9c0a93534b35">
+                                    <SHORT-NAME>AccelerationPedalPositionSensorDataTypeMappingsSet</SHORT-NAME>
+                                    <DATA-TYPE-MAPS>
+                                        <DATA-TYPE-MAP>
+                                            <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/Appl_SetpointPercent_LkupTbl</APPLICATION-DATA-TYPE-REF>
+                                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/MyStruct</IMPLEMENTATION-DATA-TYPE-REF>
+                                        </DATA-TYPE-MAP>
+                                        <DATA-TYPE-MAP>
+                                            <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/Float</APPLICATION-DATA-TYPE-REF>
+                                            <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/float32</IMPLEMENTATION-DATA-TYPE-REF>
+                                        </DATA-TYPE-MAP>
+                                    </DATA-TYPE-MAPS>
+                                </DATA-TYPE-MAPPING-SET>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>Ground</SHORT-NAME>
+                            <ELEMENTS>
+                                <CONSTANT-SPECIFICATION UUID="9bc45bd2-bfda-57c4-6ba0-0a52156fb2a8">
+                                    <SHORT-NAME>SetpointPercent_LkupTbl</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <APPLICATION-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>SetpointPercent_LkupTbl</SHORT-LABEL>
+                                            <CATEGORY>CURVE</CATEGORY>
+                                            <SW-AXIS-CONTS>
+                                                <SW-AXIS-CONT>
+                                                    <CATEGORY>STD_AXIS</CATEGORY>
+                                                    <UNIT-REF DEST="UNIT">/AUTOSAR_Platform/ImplementationDataTypes/NoUnit</UNIT-REF>
+                                                    <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                    <SW-ARRAYSIZE>
+                                                        <V>11</V>
+                                                    </SW-ARRAYSIZE>
+                                                    <SW-VALUES-PHYS>
+                                                        <V>170</V>
+                                                        <V>251.5</V>
+                                                        <V>333</V>
+                                                        <V>414.5</V>
+                                                        <V>496</V>
+                                                        <V>577.5</V>
+                                                        <V>659</V>
+                                                        <V>740.5</V>
+                                                        <V>822</V>
+                                                        <V>903.5</V>
+                                                        <V>985</V>
+                                                    </SW-VALUES-PHYS>
+                                                </SW-AXIS-CONT>
+                                            </SW-AXIS-CONTS>
+                                            <SW-VALUE-CONT>
+                                                <UNIT-REF DEST="UNIT">/AUTOSAR_Platform/ImplementationDataTypes/NoUnit</UNIT-REF>
+                                                <SW-ARRAYSIZE>
+                                                    <V>11</V>
+                                                </SW-ARRAYSIZE>
+                                                <SW-VALUES-PHYS>
+                                                    <V>0</V>
+                                                    <V>10</V>
+                                                    <V>20</V>
+                                                    <V>30</V>
+                                                    <V>40</V>
+                                                    <V>50</V>
+                                                    <V>60</V>
+                                                    <V>70</V>
+                                                    <V>80</V>
+                                                    <V>90</V>
+                                                    <V>100</V>
+                                                </SW-VALUES-PHYS>
+                                            </SW-VALUE-CONT>
+                                        </APPLICATION-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

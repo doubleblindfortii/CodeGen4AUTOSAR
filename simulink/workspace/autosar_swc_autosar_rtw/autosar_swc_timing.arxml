@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc
+Model version                : 1.37
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sun Aug 10 14:22:24 2025
+Model Checksum               : 1970503136 2012025558 2400143884 2812305924
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <SWC-TIMING UUID="10014574-caee-5c7e-0035-4a990081a168">
+                    <SHORT-NAME>test_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="a1ff143e-3429-574a-1be3-d77dc5acc07e">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="5bd99634-0a1d-5f34-cd29-d5dea81fda95">
+                                    <SHORT-NAME>Runnable_1s</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/autosar_swc/test_IB/Runnable_1s</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/test_timing/EOC/Runnable_2S</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="cdeaf3af-536e-5cd1-5536-73399d541de4">
+                                    <SHORT-NAME>Runnable_2S</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/autosar_swc/test_IB/Runnable_2S</EXECUTABLE-REF>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/autosar_swc/test_IB</BEHAVIOR-REF>
+                </SWC-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc
+Model version                : 1.37
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sun Aug 10 14:22:24 2025
+Model Checksum               : 1970503136 2012025558 2400143884 2812305924
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>DataTypes</SHORT-NAME>
+            <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE UUID="12a8e1c3-d2ef-54c2-478a-dd728f0834c9">
+                    <SHORT-NAME>Double</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+            </ELEMENTS>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-ADDR-METHOD UUID="5fc09de8-8006-50cf-a698-e40a3ad982d1">
+                            <SHORT-NAME>CODE</SHORT-NAME>
+                            <SECTION-TYPE>CODE</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD UUID="74904b8c-0ade-578a-5018-9281bfaa167d">
+                            <SHORT-NAME>CONST</SHORT-NAME>
+                            <SECTION-TYPE>CONST</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD UUID="259a4370-67fc-5984-f44d-036778a61bd2">
+                            <SHORT-NAME>VAR</SHORT-NAME>
+                            <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE UUID="6fc91378-6151-53f2-ff96-cbbc204c3c2b">
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

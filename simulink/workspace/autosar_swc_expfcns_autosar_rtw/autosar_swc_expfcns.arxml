@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_expfcns
+Model version                : 4.20
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Mon Aug 11 11:51:46 2025
+Model Checksum               : 2020526468 1503304257 2239411181 2854473944
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>pkg</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>swc</SHORT-NAME>
+                    <ELEMENTS>
+                        <APPLICATION-SW-COMPONENT-TYPE UUID="cb378c95-d2a2-5966-1270-de898aa7eaef">
+                            <SHORT-NAME>ASWC</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="c1396f2a-a08b-5acc-1a08-7fd4b40e8b5a">
+                                    <SHORT-NAME>RPort</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface1/DE1</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>60</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface1/DE2</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>60</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValu_036fab392deee624</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValu_036fab392deee624</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/pkg/if/Interface1</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="b5edc47e-fe17-526e-fad7-58b9063ab9a4">
+                                    <SHORT-NAME>PPort</SHORT-NAME>
+                                    <PROVIDED-COM-SPECS>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE1</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_SInt8</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_SInt8</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE2</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_SInt8</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_SInt8</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE3</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_SInt8</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_SInt8</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE4</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                    </PROVIDED-COM-SPECS>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/pkg/if/Interface2</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                            </PORTS>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="410a3c9d-f5a4-567e-c9b5-3cbede62a838">
+                                    <SHORT-NAME>IB</SHORT-NAME>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="0c3dee7f-5b2a-5d22-f5fe-337774198d03">
+                                            <SHORT-NAME>Event_t_1tic_A</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/pkg/swc/ASWC/IB/Runnable1</START-ON-EVENT-REF>
+                                            <PERIOD>1</PERIOD>
+                                        </TIMING-EVENT>
+                                        <TIMING-EVENT UUID="fd8c6394-fadf-5a93-d0b2-6963c6f82700">
+                                            <SHORT-NAME>Event_t_1tic_B</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/pkg/swc/ASWC/IB/Runnable2</START-ON-EVENT-REF>
+                                            <PERIOD>1</PERIOD>
+                                        </TIMING-EVENT>
+                                        <TIMING-EVENT UUID="a4e8789f-c472-540b-1873-fbccebd0650a">
+                                            <SHORT-NAME>Event_t_10tic</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/pkg/swc/ASWC/IB/Runnable3</START-ON-EVENT-REF>
+                                            <PERIOD>10</PERIOD>
+                                        </TIMING-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="e7bf54bd-8eb9-56f6-0c2a-3fbb73cdae2f">
+                                            <SHORT-NAME>IRV1</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/Double</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="e1e69066-db46-572d-1c1b-b5c84f663a20">
+                                            <SHORT-NAME>IRV2</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/Double</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="3accfadf-7ea3-51a6-059f-592bf749a927">
+                                            <SHORT-NAME>IRV3</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/SInt8</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_SInt8</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_SInt8</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="ac5845ee-cf13-544f-a1a4-2fecbc5a6181">
+                                            <SHORT-NAME>IRV4</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/Double</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="3d3f2079-9e83-5c4d-f037-4106cea5298f">
+                                            <SHORT-NAME>Runnable_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>Runnable_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="24925dea-a2d3-579c-1f2d-66a10ccee488">
+                                            <SHORT-NAME>Runnable1</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="0aa3b2c1-ae5e-53e4-f802-a1d44690770b">
+                                                    <SHORT-NAME>IN_RPort_DE1</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/pkg/swc/ASWC/RPort</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface1/DE1</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="9ed4f6e7-1fc8-5c49-e034-fca025e78e99">
+                                                    <SHORT-NAME>OUT_PPort_DE1</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/pkg/swc/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE1</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <READ-LOCAL-VARIABLES>
+                                                <VARIABLE-ACCESS UUID="fa67f91f-c105-5c65-5557-45e3f6d93f52">
+                                                    <SHORT-NAME>RV_IRV3</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV3</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </READ-LOCAL-VARIABLES>
+                                            <SYMBOL>Runnable1</SYMBOL>
+                                            <WRITTEN-LOCAL-VARIABLES>
+                                                <VARIABLE-ACCESS UUID="07896eb7-977a-5013-d5dc-302523091383">
+                                                    <SHORT-NAME>WV_IRV1</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV1</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </WRITTEN-LOCAL-VARIABLES>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="e65b890c-2350-53a1-8abf-469e8ac7c9a1">
+                                            <SHORT-NAME>Runnable2</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="0e87cd31-c52d-571e-e184-6c5a89722230">
+                                                    <SHORT-NAME>OUT_PPort_DE3</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/pkg/swc/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE3</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                                <VARIABLE-ACCESS UUID="e32aae7d-ea5b-5f29-128b-e69552b82f1f">
+                                                    <SHORT-NAME>OUT_PPort_DE4</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/pkg/swc/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE4</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <READ-LOCAL-VARIABLES>
+                                                <VARIABLE-ACCESS UUID="cf5a974d-58ca-5e96-bc27-b9c0bed1ca9f">
+                                                    <SHORT-NAME>RV_IRV1</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV1</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                                <VARIABLE-ACCESS UUID="6da4feac-0bf2-5017-c3bb-10cb7aa3a7e6">
+                                                    <SHORT-NAME>RV_IRV2</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV2</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </READ-LOCAL-VARIABLES>
+                                            <SYMBOL>Runnable2</SYMBOL>
+                                            <WRITTEN-LOCAL-VARIABLES>
+                                                <VARIABLE-ACCESS UUID="54d1d32c-1a2d-5456-1fdf-f70015d77dec">
+                                                    <SHORT-NAME>WV_IRV4</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV4</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </WRITTEN-LOCAL-VARIABLES>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="64f8ee1f-dbd6-564f-b83d-d6c5a7c49f48">
+                                            <SHORT-NAME>Runnable3</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="f8008195-8cba-5507-4f38-d56dbb6b5e2e">
+                                                    <SHORT-NAME>IN_RPort_DE2</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/pkg/swc/ASWC/RPort</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface1/DE2</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="2f424d4a-52b4-5e64-f419-f6164d5fed67">
+                                                    <SHORT-NAME>OUT_PPort_DE2</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/pkg/swc/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/if/Interface2/DE2</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <READ-LOCAL-VARIABLES>
+                                                <VARIABLE-ACCESS UUID="98f15c6a-210c-5212-6a1a-5780f3222494">
+                                                    <SHORT-NAME>RV_IRV4</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV4</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </READ-LOCAL-VARIABLES>
+                                            <SYMBOL>Runnable3</SYMBOL>
+                                            <WRITTEN-LOCAL-VARIABLES>
+                                                <VARIABLE-ACCESS UUID="ea3189c5-c79d-5026-7c54-b3973309b8ce">
+                                                    <SHORT-NAME>WV_IRV2</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV2</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                                <VARIABLE-ACCESS UUID="5d01d72d-fb5f-5e47-2edd-f2060dcb6b29">
+                                                    <SHORT-NAME>WV_IRV3</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/pkg/swc/ASWC/IB/IRV3</LOCAL-VARIABLE-REF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </WRITTEN-LOCAL-VARIABLES>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </APPLICATION-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>if</SHORT-NAME>
+                    <ELEMENTS>
+                        <SENDER-RECEIVER-INTERFACE UUID="ad0b7b90-27c0-5df5-7c1a-0ef9fdf0c347">
+                            <SHORT-NAME>Interface1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="3b0545a1-77d4-57a3-6435-5fdfce0f96e9">
+                                    <SHORT-NAME>DE1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/Double</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="6085651a-38c4-5456-7cf9-87bd57031a5f">
+                                    <SHORT-NAME>DE2</SHORT-NAME>
+                                    <CATEGORY>ARRAY</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/rt_Array_Double_2</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="dbdce771-1dda-5695-a1a7-3be431bd231b">
+                            <SHORT-NAME>Interface2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="41ed5444-4720-55d2-f3b9-bc3ff4ce48d5">
+                                    <SHORT-NAME>DE1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/SInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="bef9445d-41c1-583f-2ec9-eec799a64439">
+                                    <SHORT-NAME>DE2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/SInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="8d0a25c4-6c61-5b4e-45cc-c91d24c6f33c">
+                                    <SHORT-NAME>DE3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/SInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e86c2d15-9005-504d-b0ad-90bf75d9d26f">
+                                    <SHORT-NAME>DE4</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/Double</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>dt</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE UUID="f9493688-a45c-59c8-49ea-b27db4e19056">
+                            <SHORT-NAME>Double</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/pkg/dt/SwBaseTypes/float64</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="a4440063-8472-5b26-83ed-3e78248609de">
+                            <SHORT-NAME>rt_Array_Double_2</SHORT-NAME>
+                            <CATEGORY>ARRAY</CATEGORY>
+                            <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="dc5bd69f-cbeb-5d53-4905-b657fdd4b8cb">
+                                    <SHORT-NAME>rt_Array_Double_2</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <ARRAY-SIZE>2</ARRAY-SIZE>
+                                    <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/Double</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="9a462e96-177c-5438-0dad-471ec52e2c71">
+                            <SHORT-NAME>SInt8</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/pkg/dt/SwBaseTypes/sint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="d4b85161-9949-5de6-d91e-f05536d2a3dd">
+                            <SHORT-NAME>rt_Array_SInt8_2</SHORT-NAME>
+                            <CATEGORY>ARRAY</CATEGORY>
+                            <SUB-ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e3da5a6a-1f7e-5cf3-bac1-2ce7ae9ba7e7">
+                                    <SHORT-NAME>rt_Array_SInt8_2</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <ARRAY-SIZE>2</ARRAY-SIZE>
+                                    <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/pkg/dt/SInt8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                            </SUB-ELEMENTS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>Ground</SHORT-NAME>
+                            <ELEMENTS>
+                                <CONSTANT-SPECIFICATION UUID="34e0d5e9-e53a-57d0-0ddf-6294ff4da42e">
+                                    <SHORT-NAME>DefaultInitValue_Double</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="0a7c964c-db7a-529f-b836-1261c80143fd">
+                                    <SHORT-NAME>DefaultInitValu_036fab392deee624</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <ARRAY-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValu_036fab392deee624</SHORT-LABEL>
+                                            <ELEMENTS>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValu_d172891e92bde674</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValu_2d898f9704c2f030</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </ELEMENTS>
+                                        </ARRAY-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="590a0ba8-9f01-5d7d-72e4-6fc7f67d2648">
+                                    <SHORT-NAME>DefaultInitValue_SInt8</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_SInt8</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="da8fa7c2-d7a2-5ae0-4e3d-e56da82c52b0">
+                                    <SHORT-NAME>DefaultInitValu_33c01c7d02936bc6</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <ARRAY-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValu_33c01c7d02936bc6</SHORT-LABEL>
+                                            <ELEMENTS>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValu_ea84cfedb01feb42</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_SInt8</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>DefaultInitValu_5f83b4901e9f9ad9</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_SInt8</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </ELEMENTS>
+                                        </ARRAY-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <SW-BASE-TYPE UUID="b506a0ed-9b7b-5ed8-b548-e304bd88eeea">
+                                    <SHORT-NAME>float64</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                                <SW-BASE-TYPE UUID="65ae940d-b922-56d6-9c8e-e1393a7511b3">
+                                    <SHORT-NAME>sint8</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>sint8</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>imp</SHORT-NAME>
+                    <ELEMENTS>
+                        <SWC-IMPLEMENTATION UUID="33c723ae-3977-5b4e-b408-0d872de7497d">
+                            <SHORT-NAME>ASWC_impl</SHORT-NAME>
+                            <CODE-DESCRIPTORS>
+                                <CODE>
+                                    <SHORT-NAME>Code</SHORT-NAME>
+                                    <ARTIFACT-DESCRIPTORS>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_expfcns_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>autosar_swc_expfcns_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                    </ARTIFACT-DESCRIPTORS>
+                                </CODE>
+                            </CODE-DESCRIPTORS>
+                            <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                            <RESOURCE-CONSUMPTION>
+                                <SHORT-NAME>RsrcCons_autosar_swc_expfcns</SHORT-NAME>
+                            </RESOURCE-CONSUMPTION>
+                            <SW-VERSION>4.20.1</SW-VERSION>
+                            <USED-CODE-GENERATOR>Embedded Coder 7.6 (R2021a) 14-Nov-2020</USED-CODE-GENERATOR>
+                            <VENDOR-ID>0</VENDOR-ID>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/pkg/swc/ASWC/IB</BEHAVIOR-REF>
+                        </SWC-IMPLEMENTATION>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <SWC-TIMING UUID="609e170f-151b-55ab-99ae-cfb44da1ba34">
+                    <SHORT-NAME>ASWC_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="d6dd83ae-a4d5-58d2-e6c3-c87a327eccd6">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="375eee4c-f258-5ded-2bb6-dd3e2f77e1c2">
+                                    <SHORT-NAME>Runnable1</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/pkg/swc/ASWC/IB/Runnable1</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_timing/EOC/Runnable2</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="88151ddd-15b8-5136-29f0-0b881dd3cb99">
+                                    <SHORT-NAME>Runnable2</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/pkg/swc/ASWC/IB/Runnable2</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_timing/EOC/Runnable3</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="5b9a5d4c-bcea-5956-b5f9-6a1ecb33b1ea">
+                                    <SHORT-NAME>Runnable3</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/pkg/swc/ASWC/IB/Runnable3</EXECUTABLE-REF>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/pkg/swc/ASWC/IB</BEHAVIOR-REF>
+                </SWC-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

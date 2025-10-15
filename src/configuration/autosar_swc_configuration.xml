@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+wumbuk自定义AUTOSAR配置元素信息，包含
+1. AUTOSAR 定义信息
+2. AUTOSAR 配置信息，即AUTOSAR的配置信息映射到哪部分的Modelica模型中
+-->
+<AUTOSAR xmlns="http://autosar_configuration.wumbuk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar_configuration.wumbuk/r4/v1 autosar_configuration_4-3-1.xsd">
+    <AUTOSAR-Dictionary ID="7511bbab-3f02-40f0-9863-0be5b717e025autosar_dictionary" MODEL-NAME="autosar_swc">
+        <AtomicComponents>
+            <SwcComponent ID="7511bbab-3f02-40f0-9863-0be5b717e025" NAME="autosar_swc" KIND="Application" EXPORT-XML-FILE="$ModelName_component.arxml">
+                <Component-XML-Options Internal-Behavior-Qualified-Name="/Components/autosar_swc/test_IB12" Implementation-Qualified-Name="/Components/SwcImplementations/test_Impl" Package="/Components"/>
+                <Ports>
+                    <ReceiverPorts>
+                        <ReceiverPort-Prototype ID="47540475-aab5-4c49-acaa-7c7670d59bda" NAME="In1_1s" INTERFACE-REF-ID="00a9d423-36de-41bc-ae73-48c1349fb9bc">
+                            <ReceiverPort-Specs>
+                                <Nonqueued-Receiver-Com-Spec ELEMENT-REF-ID="ab233278-0122-4595-8005-b72b87cbf9c0">
+                                    <Alive-Timeout>0</Alive-Timeout>
+                                    <Handle-Nerver-Received>false</Handle-Nerver-Received>
+                                    <Init-Value>
+                                        <Constant-Reference CONSTANT-SPECIFICATION-REF-ID=""/>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Receiver-Com-Spec>
+                            </ReceiverPort-Specs>
+                        </ReceiverPort-Prototype>
+                        <ReceiverPort-Prototype ID="719b95ae-d233-46f8-98af-757beed9c7e7" NAME="In2_2S" INTERFACE-REF-ID="191fd4bb-6c50-4647-89e9-4eed2dc39801">
+                            <ReceiverPort-Specs>
+                                <Nonqueued-Receiver-Com-Spec ELEMENT-REF-ID="6291d8cb-36f8-4652-a8b0-7c571f96474d">
+                                    <Alive-Timeout>0</Alive-Timeout>
+                                    <Handle-Nerver-Received>false</Handle-Nerver-Received>
+                                    <Init-Value>
+                                        <Constant-Reference CONSTANT-SPECIFICATION-REF-ID=""/>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Receiver-Com-Spec>
+                            </ReceiverPort-Specs>
+                        </ReceiverPort-Prototype>
+                    </ReceiverPorts>
+                    <SenderPorts>
+                        <SenderPort-Prototype ID="182453da-f5d5-40e7-b7f8-1a9254e07b7d" NAME="Out1" INTERFACE-REF-ID="05267ee7-752f-4687-a99b-57b19e26fb98">
+                            <SenderPort-Specs>
+                                <Nonqueued-Sender-Com-Spec ELEMENT-REF-ID="922b0208-e92b-48b6-b96e-eb4202eb9607">
+                                    <Init-Value>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Sender-Com-Spec>
+                            </SenderPort-Specs>
+                        </SenderPort-Prototype>
+                        <SenderPort-Prototype ID="7cdb1457-3573-4eb7-ab63-53e8a59b11c7" NAME="Out2" INTERFACE-REF-ID="223f55a1-7c49-458d-b547-324d1d49646a">
+                            <SenderPort-Specs>
+                                <Nonqueued-Sender-Com-Spec ELEMENT-REF-ID="cb26830a-5315-4ceb-a92c-b8e4a138dca4">
+                                    <Init-Value>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Sender-Com-Spec>
+                            </SenderPort-Specs>
+                        </SenderPort-Prototype>
+                    </SenderPorts>
+                    <ClientPorts/>
+                </Ports>
+                <Runnables>
+                    <Runnable-Entity ID="2ca96e62-4565-4f66-8216-2aac664860a8" NAME="Runnable_Init">
+                        <Can-Be-Invoked-Concurrently>false</Can-Be-Invoked-Concurrently>
+                        <Symbol>test_Init</Symbol>
+                        <Events/>
+                    </Runnable-Entity>
+                    <Runnable-Entity ID="1c7d3c1c-c271-44f5-b8a7-d87eab092cef" NAME="Runnable_1s">
+                        <Can-Be-Invoked-Concurrently>false</Can-Be-Invoked-Concurrently>
+                        <Symbol>Runnable_1s</Symbol>
+                        <Events>
+                            <Event-Prototype ID="9806ad13-e4e6-4d8e-965b-85952b49c5f1">
+                                <Event-Type>TimingEvent</Event-Type>
+                                <Event-Name>Event_test_Step</Event-Name>
+                                <Period>1</Period>
+                            </Event-Prototype>
+                        </Events>
+                        <Data-Read-Access>
+                            <Variable-Access ID="aeb14025-38a5-4820-a2aa-3af53aa77e44">
+                                <Port-Prototype-Ref PORT-REF-ID="47540475-aab5-4c49-acaa-7c7670d59bda" ELEMENT-REF-ID="ab233278-0122-4595-8005-b72b87cbf9c0"/>
+                            </Variable-Access>
+                        </Data-Read-Access>
+                        <Data-Write-Access>
+                            <Variable-Access ID="d731589d-e840-467c-be78-226e90b00d91">
+                                <Port-Prototype-Ref PORT-REF-ID="182453da-f5d5-40e7-b7f8-1a9254e07b7d" ELEMENT-REF-ID="922b0208-e92b-48b6-b96e-eb4202eb9607"/>
+                            </Variable-Access>
+                            <Variable-Access ID="76577532-4a15-4671-8ab9-e16c59ad7e17">
+                                <Port-Prototype-Ref PORT-REF-ID="7cdb1457-3573-4eb7-ab63-53e8a59b11c7" ELEMENT-REF-ID="cb26830a-5315-4ceb-a92c-b8e4a138dca4"/>
+                            </Variable-Access>
+                        </Data-Write-Access>
+                        <Read-Local-Access>
+                            <Variable-Access ID="d3c6c7b7-a8a3-4e52-be2c-8d48711300e3">
+                                <Local-Prototype-Ref LOCAL-REF-ID="976caf3b-e715-4f81-8f44-d6f8e3ad6292"/>
+                            </Variable-Access>
+                        </Read-Local-Access>
+                    </Runnable-Entity>
+                    <Runnable-Entity ID="06989023-1683-437f-aeff-cee84a38f6d1" NAME="Runnable_2S">
+                        <Can-Be-Invoked-Concurrently>false</Can-Be-Invoked-Concurrently>
+                        <Symbol>Runnable_2s</Symbol>
+                        <Events>
+                            <Event-Prototype ID="27ad9a92-467d-47cd-aea8-b69b19153433">
+                                <Event-Type>TimingEvent</Event-Type>
+                                <Event-Name>Event</Event-Name>
+                                <Period>2</Period>
+                            </Event-Prototype>
+                        </Events>
+                        <Data-Read-Access>
+                            <Variable-Access ID="95a55e15-8339-4fbd-9e63-0b0138ea1cf4">
+                                <Port-Prototype-Ref PORT-REF-ID="719b95ae-d233-46f8-98af-757beed9c7e7" ELEMENT-REF-ID="6291d8cb-36f8-4652-a8b0-7c571f96474d"/>
+                            </Variable-Access>
+                        </Data-Read-Access>
+                        <Write-Local-Access>
+                            <Variable-Access ID="7c969bd7-fd25-41ee-9147-a7375caa0442">
+                                <Local-Prototype-Ref LOCAL-REF-ID="976caf3b-e715-4f81-8f44-d6f8e3ad6292"/>
+                            </Variable-Access>
+                        </Write-Local-Access>
+                    </Runnable-Entity>
+                </Runnables>
+                <IRV>
+                    <IRVS>
+                        <Variable-Data-Prototype ID="976caf3b-e715-4f81-8f44-d6f8e3ad6292" NAME="IRV1" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>ReadOnly</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Init-Value>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                    <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                            </Init-Value>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</Type-Tref>
+                        </Variable-Data-Prototype>
+                    </IRVS>
+                </IRV>
+				<Parameters>
+				</Parameters>
+            </SwcComponent>
+        </AtomicComponents>
+        <Interfaces>
+            <S-R-Interfaces>
+                <Sender-Receiver-Interface ID="191fd4bb-6c50-4647-89e9-4eed2dc39801" NAME="In2_2S" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="6291d8cb-36f8-4652-a8b0-7c571f96474d" NAME="In2_2S" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>ReadOnly</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="05267ee7-752f-4687-a99b-57b19e26fb98" NAME="Out1" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="922b0208-e92b-48b6-b96e-eb4202eb9607" NAME="Out1" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>ReadOnly</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="223f55a1-7c49-458d-b547-324d1d49646a" NAME="Out2" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="cb26830a-5315-4ceb-a92c-b8e4a138dca4" NAME="Out2" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>ReadOnly</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="00a9d423-36de-41bc-ae73-48c1349fb9bc" NAME="In1_1s" IS-SERVICE="false" PACKAGE="/Interfaces/test">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="ab233278-0122-4595-8005-b72b87cbf9c0" NAME="In1_1s" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>ReadOnly</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</Type-Tref>
+                        </Variable-Data-Prototype>
+                        <Variable-Data-Prototype ID="a77f2033-eb19-426b-8567-37a33e796938" NAME="New" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>ReadOnly</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+            </S-R-Interfaces>
+            <C-S-Interfaces/>
+        </Interfaces>
+        <Methods>
+            <SwAddrMethods>
+                <SwAddrMethod-Prototype ID="71899cc8-d07b-457f-9a87-27b88fc6de6a" NAME="CODE" SECTION-TYPE="CODE" EXPORT-XML-FILE="$ModelName_datatype.arxml" PACKAGE="/DataTypes/SwAddrMethods"/>
+                <SwAddrMethod-Prototype ID="fe2ffd69-9337-42bb-a302-d576ea505361" NAME="CONST" SECTION-TYPE="CONST" EXPORT-XML-FILE="$ModelName_datatype.arxml" PACKAGE="/DataTypes/SwAddrMethods"/>
+                <SwAddrMethod-Prototype ID="e923a5fb-0aa1-4c77-810c-f7227de1f3bc" NAME="VAR" SECTION-TYPE="VAR" EXPORT-XML-FILE="$ModelName_datatype.arxml" PACKAGE="/DataTypes/SwAddrMethods"/>
+            </SwAddrMethods>
+        </Methods>
+        <XML-Options>
+            <View-And-Edit-Options XML-OPTIONS-SOURCE="Inlined in this model"/>
+            <Packaging-Options EXPORTED-XML-FILE-PACKAGING="Single File"/>
+            <Package-Paths DATATYPE-PACKAGE="/DataTypes" INTERFACE-PACKAGE="/Interfaces/test"/>
+            <Additional-Packages SWBASETYPE-PACKAGE="/DataTypes/SwBaseTypes123" CONSTANT-SPECIFICATION-PACKAGE="/pkg/dt/Ground" SWADDRESS-METHOD-PACKAGE="/DataTypes/SwAddrMethods"/>
+            <Additional-Options/>
+        </XML-Options>
+    </AUTOSAR-Dictionary>
+    <CODE-Mapping ID="286923f1-2e72-4048-b28d-ac3e5436c997" AUTOSAR-DICTIONARY-REF-ID="a1c45b38-b534-44d6-b58b-06b3263a64a6">
+        <Functions>
+            <Function-Prototype ID="570c0a5f-25fb-4877-bcfd-874a602d0a2d" RUNNABLE-ENTITY-REF-ID="2ca96e62-4565-4f66-8216-2aac664860a8">
+                <Source>DataDictionary</Source>
+                <Function-SwAddrMethod>None</Function-SwAddrMethod>
+                <Function-Internal-Data-SwAddrMethod>None</Function-Internal-Data-SwAddrMethod>
+            </Function-Prototype>
+            <Function-Prototype ID="de7f337d-7678-43bd-8430-261c2e08c93b" RUNNABLE-ENTITY-REF-ID="1c7d3c1c-c271-44f5-b8a7-d87eab092cef">
+                <Source>runnableEntity</Source>
+                <Function-SwAddrMethod>None</Function-SwAddrMethod>
+                <Function-Internal-Data-SwAddrMethod>None</Function-Internal-Data-SwAddrMethod>
+            </Function-Prototype>
+            <Function-Prototype ID="4939b7b4-1851-4a22-879f-b10c442d2836" RUNNABLE-ENTITY-REF-ID="06989023-1683-437f-aeff-cee84a38f6d1">
+                <Source>runnableEntity3</Source>
+                <Function-SwAddrMethod>None</Function-SwAddrMethod>
+                <Function-Internal-Data-SwAddrMethod>None</Function-Internal-Data-SwAddrMethod>
+            </Function-Prototype>
+        </Functions>
+        <Inports>
+            <Inport-Prototype ID="1cc477ab-63fc-4636-8164-8097ce0b03ea" RECEIVE-PORT-REF-ID="47540475-aab5-4c49-acaa-7c7670d59bda" ELEMENT-REF-ID="ab233278-0122-4595-8005-b72b87cbf9c0">
+                <Source>rport</Source>
+                <DataAccessMode>ImplicitReceive</DataAccessMode>
+            </Inport-Prototype>
+            <Inport-Prototype ID="fe56d6f5-5f8d-4342-b065-3a219f012178" RECEIVE-PORT-REF-ID="719b95ae-d233-46f8-98af-757beed9c7e7" ELEMENT-REF-ID="6291d8cb-36f8-4652-a8b0-7c571f96474d">
+                <Source>rport1</Source>
+                <DataAccessMode>ImplicitReceive</DataAccessMode>
+            </Inport-Prototype>
+        </Inports>
+        <Outports>
+            <Outport-Prototype ID="6bc24573-0942-4947-98bf-1331605af60a" SENDER-PORT-REF-ID="182453da-f5d5-40e7-b7f8-1a9254e07b7d" ELEMENT-REF-ID="922b0208-e92b-48b6-b96e-eb4202eb9607">
+                <Source>pport</Source>
+                <DataAccessMode>ImplicitSend</DataAccessMode>
+            </Outport-Prototype>
+            <Outport-Prototype ID="a37db2d3-d29d-42f1-afcb-a29de2ebaf4f" SENDER-PORT-REF-ID="7cdb1457-3573-4eb7-ab63-53e8a59b11c7" ELEMENT-REF-ID="cb26830a-5315-4ceb-a92c-b8e4a138dca4">
+                <Source>pport1</Source>
+                <DataAccessMode>ImplicitSend</DataAccessMode>
+            </Outport-Prototype>
+        </Outports>
+        <Parameters-Mappings>
+            <Model-Parameters/>
+        </Parameters-Mappings>
+        <Data-Stores/>
+        <Signals-States>
+            <Signals>
+                <Signal-Prototype ID="38d58e70-91b9-4765-b690-2a4152e10698">
+                    <Source>add.u2</Source>
+                    <Mapped-To></Mapped-To>
+                    <Path>M2.Examples.autosar_swc_Example.Subsystem</Path>
+                    <Sw-Calibration-Access>ReadWrite</Sw-Calibration-Access>
+                </Signal-Prototype>
+                <Signal-Prototype ID="eb989a1a-75d9-4da9-9aa3-04bdbbac3d58">
+                    <Source>subsystem1.y_</Source>
+                    <Mapped-To></Mapped-To>
+                    <Path>M2.Examples.autosar_swc_Example.RunnableEntity</Path>
+                    <Sw-Calibration-Access>ReadWrite</Sw-Calibration-Access>
+                </Signal-Prototype>
+            </Signals>
+            <States>
+                <State-Prototype ID="d25f5f10-c4cb-4ed6-9a1b-d54f2893364d">
+                    <Source>pID_I</Source>
+                    <Mapped-To>Auto</Mapped-To>
+                    <Path>autosar_swc.runnableEntity3</Path>
+                </State-Prototype>
+            </States>
+        </Signals-States>
+        <Data-Transfers>
+            <Data-Transfer-Prototype ID="1e413d8d-76fc-422a-b715-254e10260c01" IRV-REF-ID="976caf3b-e715-4f81-8f44-d6f8e3ad6292">
+                <Source>irv1_1</Source>
+                <IrvAccessMode>Implicit</IrvAccessMode>
+            </Data-Transfer-Prototype>
+        </Data-Transfers>
+        <Function-Callers/>
+    </CODE-Mapping>
+    <UnModify>
+        <IMPLEMENTATION-DATA-TYPE UUID="12a8e1c3-d2ef-54c2-478a-dd728f0834c9">
+            <SHORT-NAME>Double</SHORT-NAME>
+            <CATEGORY>VALUE</CATEGORY>
+            <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes123/float64</BASE-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+            </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <SW-BASE-TYPE UUID="6fc91378-6151-53f2-ff96-cbbc204c3c2b">
+            <SHORT-NAME>float64</SHORT-NAME>
+            <CATEGORY>FIXED_LENGTH</CATEGORY>
+            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+        </SW-BASE-TYPE>
+    </UnModify>
+</AUTOSAR>

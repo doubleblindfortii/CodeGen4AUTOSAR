@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+wumbuk2024v自定义AUTOSAR配置元素信息，包含
+1. AUTOSAR 定义信息
+2. AUTOSAR 配置信息，即AUTOSAR的配置信息映射到哪部分的Modelica模型中
+-->
+<AUTOSAR xmlns="http://autosar_configuration.wumbuk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar_configuration.wumbuk/r4/v1 autosar_configuration_4-3-1.xsd">
+    <AUTOSAR-Dictionary ID="d0eb7232-affb-4151-a6df-995c9f407389" MODEL-NAME="autosar_swc_monitor">
+        <AtomicComponents>
+            <SwcComponent ID="5e2db2a4-7a41-445d-ba16-ba72dd950bab" NAME="ThrottlePositionMonitor" KIND="Application" EXPORT-XML-FILE="$ModelName_component.arxml">
+                <Component-XML-Options Internal-Behavior-Qualified-Name="/Component/InternalBehaviors/test_IB" Implementation-Qualified-Name="/Component/SwcImplementations/test_IB" Package="/Component"/>
+                <Ports>
+                    <ReceiverPorts>
+                        <ReceiverPort-Prototype ID="bd040705-15a1-4454-82b4-f45a314727ff" NAME="TPS_Primary" INTERFACE-REF-ID="e4c3e511-12ef-45b8-8fc9-a2a89e3a5ab8">
+                            <ReceiverPort-Specs>
+                                <Nonqueued-Receiver-Com-Spec ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433">
+                                    <Alive-Timeout>0</Alive-Timeout>
+                                    <Handle-Nerver-Received>false</Handle-Nerver-Received>
+                                    <Init-Value>
+                                        <Constant-Reference CONSTANT-SPECIFICATION-REF-ID=""/>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Receiver-Com-Spec>
+                            </ReceiverPort-Specs>
+                        </ReceiverPort-Prototype>
+                        <ReceiverPort-Prototype ID="70b95a46-bc60-48b1-b821-1c7e73a24998" NAME="TPS_Secondary" INTERFACE-REF-ID="e4c3e511-12ef-45b8-8fc9-a2a89e3a5ab8">
+                            <ReceiverPort-Specs>
+                                <Nonqueued-Receiver-Com-Spec ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433">
+                                    <Alive-Timeout>0</Alive-Timeout>
+                                    <Handle-Nerver-Received>false</Handle-Nerver-Received>
+                                    <Init-Value>
+                                        <Constant-Reference CONSTANT-SPECIFICATION-REF-ID=""/>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Receiver-Com-Spec>
+                            </ReceiverPort-Specs>
+                        </ReceiverPort-Prototype>
+                    </ReceiverPorts>
+                    <SenderPorts>
+                        <SenderPort-Prototype ID="2ed9e90e-3836-4302-899e-5fe94595954f" NAME="TPS_Percent" INTERFACE-REF-ID="e4c3e511-12ef-45b8-8fc9-a2a89e3a5ab8">
+                            <SenderPort-Specs>
+                                <Nonqueued-Sender-Com-Spec ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433">
+                                    <Init-Value>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </Init-Value>
+                                </Nonqueued-Sender-Com-Spec>
+                            </SenderPort-Specs>
+                        </SenderPort-Prototype>
+                    </SenderPorts>
+                    <ClientPorts/>
+                </Ports>
+                <Runnables>
+                    <Runnable-Entity ID="d80dba53-1404-42cd-b42f-3c7b898d6a5a" NAME="Runnable_Step">
+                        <Can-Be-Invoked-Concurrently>false</Can-Be-Invoked-Concurrently>
+                        <Symbol>Runnable_Step</Symbol>
+                        <Events>
+                            <Event-Prototype ID="7d9e2ddd-7fc2-46cc-a457-7ff7be726b17">
+                                <Event-Type>TimingEvent</Event-Type>
+                                <Event-Name>Event_Runnable_Step</Event-Name>
+                                <Period>1</Period>
+                            </Event-Prototype>
+                        </Events>
+                        <Data-Read-Access>
+                            <Variable-Access ID="b4335b8a-442c-43a8-84b1-9a7dac7b1d82">
+                                <Port-Prototype-Ref PORT-REF-ID="70b95a46-bc60-48b1-b821-1c7e73a24998" ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433"/>
+                            </Variable-Access>
+                            <Variable-Access ID="48833e5a-a407-44e4-8711-86df69c47a0b">
+                                <Port-Prototype-Ref PORT-REF-ID="bd040705-15a1-4454-82b4-f45a314727ff" ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433"/>
+                            </Variable-Access>
+                        </Data-Read-Access>
+                        <Data-Write-Access>
+                            <Variable-Access ID="14f610dd-b8ee-46db-8c20-f418fc03345b">
+                                <Port-Prototype-Ref PORT-REF-ID="2ed9e90e-3836-4302-899e-5fe94595954f" ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433"/>
+                            </Variable-Access>
+                        </Data-Write-Access>
+                    </Runnable-Entity>
+                    <Runnable-Entity ID="6e3fcad9-60d3-4953-aa39-4fcd3776cb7a" NAME="ThrottlePositionMonitor_Init">
+                        <Can-Be-Invoked-Concurrently>false</Can-Be-Invoked-Concurrently>
+                        <Symbol>ThrottlePositionMonitor_Init</Symbol>
+                        <Events>
+                            <Event-Prototype ID="6fa0af86-a126-4245-9b86-957d9074ac0f">
+                                <Event-Type>InitEvent</Event-Type>
+                                <Event-Name>Event_ThrottlePositionMonitor_Init</Event-Name>
+                                <Period>1</Period>
+                            </Event-Prototype>
+                        </Events>
+                    </Runnable-Entity>
+                </Runnables>
+                <IRV>
+                    <IRVS/>
+                </IRV>
+            </SwcComponent>
+        </AtomicComponents>
+        <Interfaces>
+            <S-R-Interfaces>
+                <Sender-Receiver-Interface ID="f66c1f42-a6a3-462b-aa15-87e8badea425" NAME="APP_hwIO" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="af574fe1-de76-40d4-96e8-6f5e37fc294f" NAME="Value_1" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>NotAccessible</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE"></Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="b16186e1-b1e3-49e3-a021-adbfe5b12273" NAME="APP_Percent" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="dc6e9620-88ec-4cb2-8124-b66d1ae8ae41" NAME="Value_2" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>NotAccessible</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE"></Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="ca3b701d-1056-4844-b896-7f18fb21b433" NAME="ThrCmd_HwIO" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="be8f4a0d-eabb-41a9-b336-4d3bb36f22fd" NAME="Value_3" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>NotAccessible</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE"></Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="6a3f0bb1-722e-437e-a728-adc844bd2ff2" NAME="ThrCmd_Percent" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="f0268616-7ec1-4afc-9d65-61a0a0d4a7c4" NAME="Value_4" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>NotAccessible</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE"></Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="097e1f5a-df5d-4e63-8bc1-a11d2964bc15" NAME="TPS_HwIO" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="fafdeb4e-5b7b-4e09-8441-3949170cbb95" NAME="Value_5" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>NotAccessible</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE"></Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+                <Sender-Receiver-Interface ID="e4c3e511-12ef-45b8-8fc9-a2a89e3a5ab8" NAME="TPS_Percent" IS-SERVICE="false" PACKAGE="/Interfaces">
+                    <Data-Elements>
+                        <Variable-Data-Prototype ID="6350ad2b-bdf1-47a2-a28b-ed429f784433" NAME="Value_6" DISPLAY-FORMAT="">
+                            <Sw-Calibration-Access>NotAccessible</Sw-Calibration-Access>
+                            <Sw-AddrMethod>None</Sw-AddrMethod>
+                            <Type-Tref DEST="IMPLEMENTATION-DATA-TYPE"></Type-Tref>
+                        </Variable-Data-Prototype>
+                    </Data-Elements>
+                </Sender-Receiver-Interface>
+            </S-R-Interfaces>
+            <C-S-Interfaces/>
+        </Interfaces>
+        <Methods>
+            <SwAddrMethods/>
+        </Methods>
+        <XML-Options>
+            <View-And-Edit-Options XML-OPTIONS-SOURCE="Inlined in this model"/>
+            <Packaging-Options EXPORTED-XML-FILE-PACKAGING="Modular"/>
+            <Package-Paths DATATYPE-PACKAGE="/DataTypes" INTERFACE-PACKAGE="/Interfaces"/>
+            <Additional-Packages SWBASETYPE-PACKAGE="/DataTypes/SwBaseTypes" CONSTANT-SPECIFICATION-PACKAGE="/DataTypes/Constants" PYSICAL-DATACONSTRAINT-PACKAGE="/DataTypes/ApplDataTypes/DataConstrs" SYSTEM-CONSTANT-PACAKGE="/DataTypes/SystemConstants" SWADDRESS-METHOD-PACKAGE="/DataTypes/SwAddrMethods" UNIT-PACKAGE="/DataTypes/Units"/>
+            <Additional-Options IMPLEMENTATION-DATATYPE-REFERENCE="Allowed" SWCALIBRATIONACCESS-DEFAULT-VALUE="ReadWrite" COMPUMETHOD-DIRECTION="InternalToPhys" INTERNAL-DATACONSTRAINS-EXPORT="false"/>
+        </XML-Options>
+    </AUTOSAR-Dictionary>
+    <CODE-Mapping ID="c0478f7d-8c68-4efc-be49-a79faeb99bc6" AUTOSAR-DICTIONARY-REF-ID="d0eb7232-affb-4151-a6df-995c9f407389" InternalDataPackaging="PrivateStructure">
+        <Functions>
+            <Function-Prototype ID="5e091b3c-e45b-4a2e-9cf6-8defa01468b6" RUNNABLE-ENTITY-REF-ID="6e3fcad9-60d3-4953-aa39-4fcd3776cb7a">
+                <Source>DataDictionary</Source>
+                <Function-SwAddrMethod>None</Function-SwAddrMethod>
+                <Function-Internal-Data-SwAddrMethod>None</Function-Internal-Data-SwAddrMethod>
+            </Function-Prototype>
+            <Function-Prototype ID="2b3bd36b-65bb-4a48-afee-8c13f6e0fef0" RUNNABLE-ENTITY-REF-ID="d80dba53-1404-42cd-b42f-3c7b898d6a5a">
+                <Source>runnable_Step_sys</Source>
+                <Function-SwAddrMethod>None</Function-SwAddrMethod>
+                <Function-Internal-Data-SwAddrMethod>None</Function-Internal-Data-SwAddrMethod>
+            </Function-Prototype>
+        </Functions>
+        <Inports>
+            <Inport-Prototype ID="f39b7e38-bf39-4e80-813e-0c6964a8283f" RECEIVE-PORT-REF-ID="70b95a46-bc60-48b1-b821-1c7e73a24998" ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433">
+                <Source>TPS_Seconday_Value</Source>
+                <DataAccessMode>ImplicitReceive</DataAccessMode>
+            </Inport-Prototype>
+            <Inport-Prototype ID="bfcce151-d7ab-4382-ba55-6fbaf5510924" RECEIVE-PORT-REF-ID="bd040705-15a1-4454-82b4-f45a314727ff" ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433">
+                <Source>TPS_Primary_Value</Source>
+                <DataAccessMode>ImplicitReceive</DataAccessMode>
+            </Inport-Prototype>
+        </Inports>
+        <Outports>
+            <Outport-Prototype ID="e6a37250-9bdc-474c-a3be-c29df810dc0b" SENDER-PORT-REF-ID="2ed9e90e-3836-4302-899e-5fe94595954f" ELEMENT-REF-ID="6350ad2b-bdf1-47a2-a28b-ed429f784433">
+                <Source>TPS_Percent_Value</Source>
+                <DataAccessMode>ImplicitSend</DataAccessMode>
+            </Outport-Prototype>
+        </Outports>
+        <Parameters-Mappings>
+            <Model-Parameter-Arguments/>
+            <Model-Parameters/>
+        </Parameters-Mappings>
+        <Data-Stores/>
+        <Signals-States>
+            <Signals/>
+            <States/>
+        </Signals-States>
+        <Data-Transfers/>
+        <Function-Callers/>
+    </CODE-Mapping>
+    <UnModify>
+        <IMPLEMENTATION-DATA-TYPE UUID="46d9e203-015e-4fac-8a9d-ec0b998f9961">
+            <SHORT-NAME>Double</SHORT-NAME>
+            <CATEGORY>VALUE</CATEGORY>
+            <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+            </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <SW-BASE-TYPE UUID="41f2a6d8-5d25-4d09-acb9-325f00c20b06">
+            <SHORT-NAME>float64</SHORT-NAME>
+            <CATEGORY>FIXED_LENGTH</CATEGORY>
+            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+        </SW-BASE-TYPE>
+        <CONSTANT-SPECIFICATION UUID="34e0d5e9-e53a-57d0-0ddf-6294ff4da42e">
+            <SHORT-NAME>DefaultInitValue_Double</SHORT-NAME>
+            <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                    <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+            </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+        <CONSTANT-SPECIFICATION UUID="0a7c964c-db7a-529f-b836-1261c80143fd">
+            <SHORT-NAME>DefaultInitValu_036fab392deee624</SHORT-NAME>
+            <VALUE-SPEC>
+                <ARRAY-VALUE-SPECIFICATION>
+                    <SHORT-LABEL>DefaultInitValu_036fab392deee624</SHORT-LABEL>
+                    <ELEMENTS>
+                        <CONSTANT-REFERENCE>
+                            <SHORT-LABEL>DefaultInitValu_d172891e92bde674</SHORT-LABEL>
+                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                        <CONSTANT-REFERENCE>
+                            <SHORT-LABEL>DefaultInitValu_2d898f9704c2f030</SHORT-LABEL>
+                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/pkg/dt/Ground/DefaultInitValue_Double</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                    </ELEMENTS>
+                </ARRAY-VALUE-SPECIFICATION>
+            </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+    </UnModify>
+</AUTOSAR>

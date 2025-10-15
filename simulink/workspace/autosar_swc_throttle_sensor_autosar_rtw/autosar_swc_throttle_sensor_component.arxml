@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_throttle_sensor
+Model version                : 3.13
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sat Aug 09 15:14:14 2025
+Model Checksum               : 292743905 1191293530 2667777447 2408470552
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="54F9E13A-169D-4DD2-9B4D-C5E06EBD2AE8">
+                            <SHORT-NAME>ThrottlePositionSensor</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="9BF15273-DFDC-4AD1-AE60-F627A722A2E7">
+                                    <SHORT-NAME>TPS_HwIO</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/TPS_HwIO/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>ComSpec609627c4_2b672c39cbb4038e</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="5DA9F168-57AD-4E59-9607-F4B2D3E608D9">
+                                    <SHORT-NAME>TPS_Percent</SHORT-NAME>
+                                    <PROVIDED-COM-SPECS>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/TPS_Percent/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>ComSpece8cc0683_087c2a38b9bc9a1e</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                    </PROVIDED-COM-SPECS>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Interfaces/TPS_Percent</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                            </PORTS>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="CAFC99BA-1F6B-4D69-8A7B-C747A57DEF35">
+                                    <SHORT-NAME>ThrottlePositionSensor_InternalBehavior</SHORT-NAME>
+                                    <DATA-TYPE-MAPPING-REFS>
+                                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Platform/ImplementationDataTypes/DataTypeMappings/ThrottlePositionSensorDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                                    </DATA-TYPE-MAPPING-REFS>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="53D00000-7A00-48EF-B241-7BDBCC68752F">
+                                            <SHORT-NAME>Event_Runnable_Step</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Company/Components/ThrottlePositionSensor/ThrottlePositionSensor_InternalBehavior/Runnable_Step</START-ON-EVENT-REF>
+                                            <PERIOD>0.005</PERIOD>
+                                        </TIMING-EVENT>
+                                        <INIT-EVENT UUID="1EE6BB5E-D961-4E95-989A-B65F12A27E5B">
+                                            <SHORT-NAME>ThrottlePositionSensor_InitEvent</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Company/Components/ThrottlePositionSensor/ThrottlePositionSensor_InternalBehavior/ThrottlePositionSensor_Init</START-ON-EVENT-REF>
+                                        </INIT-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <PER-INSTANCE-PARAMETERS>
+                                        <PARAMETER-DATA-PROTOTYPE UUID="669f2695-8c38-54c9-ffe7-d2f1d15f160f">
+                                            <SHORT-NAME>TPSPercent_LkupTbl</SHORT-NAME>
+                                            <CATEGORY>CURVE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/Appl_TPSPercent_LkupTbl</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>TPSPercent_LkupTbl</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/AUTOSAR_Platform/ImplementationDataTypes/Ground/TPSPercent_LkupTbl</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </PARAMETER-DATA-PROTOTYPE>
+                                    </PER-INSTANCE-PARAMETERS>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="E9FA9C7B-88C2-47CF-BDA6-59F3E88CF762">
+                                            <SHORT-NAME>Runnable_Step</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="26f6b75d-031c-5d9f-cef3-5c075aaac5c9">
+                                                    <SHORT-NAME>IN_TPS_HwIO_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Company/Components/ThrottlePositionSensor/TPS_HwIO</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/TPS_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="87463ae4-cd62-51a8-7610-7c88051d2369">
+                                                    <SHORT-NAME>OUT_TPS_Percent_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Company/Components/ThrottlePositionSensor/TPS_Percent</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/TPS_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <SYMBOL>Runnable_Step</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="B76BC0D0-A953-4CE3-9B11-1F540AF1418E">
+                                            <SHORT-NAME>ThrottlePositionSensor_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>ThrottlePositionSensor_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>true</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

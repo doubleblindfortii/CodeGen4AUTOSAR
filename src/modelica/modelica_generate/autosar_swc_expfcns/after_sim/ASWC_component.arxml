@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Auto generated XML Component Description for model 
+    Model version                : 1.42                
+    Author                       : wumbuk              
+    XML source code generated on : 2025-08-13,14:30:09
+    -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Component</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="28dab144-f760-4294-b8f6-7303b3b4360a">
+                    <SHORT-NAME>ASWC</SHORT-NAME>
+                    <PORTS>
+                        <P-PORT-PROTOTYPE UUID="d1e32e9b-b63d-4ad4-9a17-7ab2a76cfb38">
+                            <SHORT-NAME>PPort</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_1</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_2</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_3</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_4</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/interface2</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="46663433-2191-4d1c-952f-86068f584e91">
+                            <SHORT-NAME>RPort</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface1/DE1</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface1/DE1</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface1/DE2</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/interface1</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="3d3cc82a-c691-4758-a8d4-5fe8dd119ae7">
+                            <SHORT-NAME>test_IB</SHORT-NAME>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="c37fe140-e802-40c1-930a-131a83d3c72e">
+                                    <SHORT-NAME>Event_Runnable1</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE_ENTITY">/Component/InternalBehaviors/test_IB/Runnable1</START-ON-EVENT-REF>
+                                    <PERIOD>1</PERIOD>
+                                </TIMING-EVENT>
+                                <TIMING-EVENT UUID="3ebf1c65-0914-449c-86a4-7f519c55dde3">
+                                    <SHORT-NAME>EventRunnalble3</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE_ENTITY">/Component/InternalBehaviors/test_IB/Runnable2</START-ON-EVENT-REF>
+                                    <PERIOD>1</PERIOD>
+                                </TIMING-EVENT>
+                                <TIMING-EVENT UUID="21cfa3dc-eae3-4596-b4bd-f43f1189ff27">
+                                    <SHORT-NAME>EventRunnable3</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE_ENTITY">/Component/InternalBehaviors/test_IB/Runnable3</START-ON-EVENT-REF>
+                                    <PERIOD>10</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e59d9bb6-42d1-4fbf-8f31-55301f0231eb">
+                                    <SHORT-NAME>IRV1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</TYPE-TREF>
+                                    <INIT-VALUE/>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="0abdb3ff-83ee-43f2-adec-afed176dd204">
+                                    <SHORT-NAME>IRV2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</TYPE-TREF>
+                                    <INIT-VALUE/>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c78277e0-e01f-4ffb-b1f0-5895b13da98c">
+                                    <SHORT-NAME>IRV3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</TYPE-TREF>
+                                    <INIT-VALUE/>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="b087f20c-daf0-4348-9dc3-5bfa9bd500d0">
+                                    <SHORT-NAME>IRV4</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</TYPE-TREF>
+                                    <INIT-VALUE/>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </IMPLICIT-INTER-RUNNABLE-VARIABLES>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="c6837302-0a9b-4427-ba8a-fbd528caafa0">
+                                    <SHORT-NAME>Runnable_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SYMBOL>Runnable_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="148dd16a-a028-4ae1-bf6b-e97e6d9f66ff">
+                                    <SHORT-NAME>Runnable1</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="b5be001a-db2a-42bf-9fd0-20418a13b899">
+                                            <SHORT-NAME>IN_RPort_DE1</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">Component/ASWC/RPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface1/DE1</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="606bc91d-6fb6-4e30-bd0e-190f595d7c76">
+                                            <SHORT-NAME>IN_RPort_DE1</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">Component/ASWC/RPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface1/DE1</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="f3aa0f80-9a73-4e9d-9e45-3c182c57a03c">
+                                            <SHORT-NAME>OUT_PPort_DE_1</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">Component/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_1</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <READ-LOCAL-VARIABLES>
+                                        <VARIABLE-ACCESS UUID="a7fdddee-b137-4d31-a2d6-b9022f8d3ae8">
+                                            <SHORT-NAME>RV_IRV3</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV3</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </READ-LOCAL-VARIABLES>
+                                    <SYMBOL>Runnable1</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES>
+                                        <VARIABLE-ACCESS UUID="c04ebf9d-c792-4bd0-84cf-cbf9fa5d1682">
+                                            <SHORT-NAME>WV_IRV1</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV1</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </WRITTEN-LOCAL-VARIABLES>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="af818462-9867-4b29-8e9f-4d9b7b9efc8e">
+                                    <SHORT-NAME>Runnable2</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="b99c4429-6399-4476-a1cf-64af00e1b7f1">
+                                            <SHORT-NAME>OUT_PPort_DE_3</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">Component/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_3</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="5f044779-f625-40a7-9e34-c783e25030ec">
+                                            <SHORT-NAME>OUT_PPort_DE_4</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">Component/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_4</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <READ-LOCAL-VARIABLES>
+                                        <VARIABLE-ACCESS UUID="cfb282a6-d46a-472e-ac5a-34b705cd95f1">
+                                            <SHORT-NAME>RV_IRV1</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV1</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="46d0e515-3b01-41b5-816f-a9789de8f1ca">
+                                            <SHORT-NAME>RV_IRV2</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV2</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </READ-LOCAL-VARIABLES>
+                                    <SYMBOL>Runnable2</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES>
+                                        <VARIABLE-ACCESS UUID="baf2e063-3e09-4598-80ca-67d9cd887c75">
+                                            <SHORT-NAME>WV_IRV4</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV4</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </WRITTEN-LOCAL-VARIABLES>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="a467bd8f-f5e4-4f7f-bf16-38115ba848fb">
+                                    <SHORT-NAME>Runnable3</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="d22ea4cc-bbc1-4186-8ceb-6efdf08d5552">
+                                            <SHORT-NAME>IN_RPort_DE2</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">Component/ASWC/RPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface1/DE2</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="75a5dcca-5340-447e-ac38-23f25363830b">
+                                            <SHORT-NAME>OUT_PPort_DE_2</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">Component/ASWC/PPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/interface2/DE_2</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <READ-LOCAL-VARIABLES>
+                                        <VARIABLE-ACCESS UUID="e84b9273-9838-4bc5-875f-f834edd73604">
+                                            <SHORT-NAME>RV_IRV4</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV4</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </READ-LOCAL-VARIABLES>
+                                    <SYMBOL>Runnable3</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES>
+                                        <VARIABLE-ACCESS UUID="49ac16e4-d5c6-4a40-bf59-69944a7e9737">
+                                            <SHORT-NAME>WV_IRV2</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV2</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="fda0d0dc-aa0f-4779-923a-1a680d0e1689">
+                                            <SHORT-NAME>WV_IRV3</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">Component/ASWC/test_IB/IRV3</LOCAL-VARIABLE-REF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </WRITTEN-LOCAL-VARIABLES>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                            <PER-INSTANCE-PARAMETERS/>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,10 @@
+#I:\学习\科研\论文\实验&进展\autosar\autosar_swc_autosar_rtw\stub\Rte_autosar_swc.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IRead_Runnable_1s_In1_1s_In1_1s
+-Rte_IWrite_Runnable_1s_Out1_Out1
+-Rte_IWriteRef_Runnable_1s_Out1_Out1
+-Rte_IWrite_Runnable_1s_Out2_Out2
+-Rte_IWriteRef_Runnable_1s_Out2_Out2
+-Rte_IRead_Runnable_2S_In2_2S_In2_2S
+-Rte_IrvIRead_Runnable_1s_IRV1
+-Rte_IrvIWrite_Runnable_2S_IRV1

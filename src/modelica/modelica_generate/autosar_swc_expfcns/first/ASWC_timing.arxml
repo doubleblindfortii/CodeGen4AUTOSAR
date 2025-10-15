@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Auto generated XML Component Description for model 
+        Model version                : 1.42                
+        Author                       : wumbuk              
+        XML source code generated on : 2025-08-13,14:30:09
+        -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <SWC-TIMING UUID="362afa72-48d0-48d4-8dd8-ae800263e6b3">
+                    <SHORT-NAME>ASWC_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="f4489547-3def-4cc1-9ccf-f8c9a0d9b06c">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="a3297aac-ba6c-480c-bf24-44887ab171dc">
+                                    <SHORT-NAME>Runnable1</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Component/InternalBehaviors/test_IB/Runnable1</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_timing/EOC/Runnable2</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="252eb799-bb07-4482-9c41-b7390895227e">
+                                    <SHORT-NAME>Runnable2</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Component/InternalBehaviors/test_IB/Runnable2</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_timing/EOC/Runnable3</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="d107c01d-ba30-4434-9226-93d9c62a75e6">
+                                    <SHORT-NAME>Runnable3</SHORT-NAME>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Component/InternalBehaviors/test_IB/Runnable3</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_timing/EOC/Runnable2</SUCCESSOR-REF>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_timing/EOC/Runnable1</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Component/InternalBehaviors/test_IB</BEHAVIOR-REF>
+                </SWC-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

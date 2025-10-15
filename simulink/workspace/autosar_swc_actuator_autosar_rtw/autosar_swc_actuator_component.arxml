@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_actuator
+Model version                : 3.1
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Sat Aug 09 15:11:20 2025
+Model Checksum               : 548080009 1015218223 2132082298 3325736049
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="59DBB377-1B0E-4FCF-9476-7BF2821852B7">
+                            <SHORT-NAME>ThrottlePositionActuator</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="3DC0FEE9-9630-494D-B0A3-4386C59623B2">
+                                    <SHORT-NAME>ThrCmd_Percent</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/ThrCmd_Percent/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>ComSpec3f1e8e08_48ae71bd53c3e72f</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Interfaces/ThrCmd_Percent</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="DA9D2B88-012F-4A75-874F-5EE3E960B08F">
+                                    <SHORT-NAME>ThrCmd_HwIO</SHORT-NAME>
+                                    <PROVIDED-COM-SPECS>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/ThrCmd_HwIO/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_SInt16</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                    </PROVIDED-COM-SPECS>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Interfaces/ThrCmd_HwIO</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                            </PORTS>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="08AA06EA-906D-4172-BF67-15B5A131150A">
+                                    <SHORT-NAME>ThrottlePositionActuator_InternalBehavior</SHORT-NAME>
+                                    <DATA-TYPE-MAPPING-REFS>
+                                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Platform/ImplementationDataTypes/DataTypeMappings/ThrottlePositionActuatorDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                                    </DATA-TYPE-MAPPING-REFS>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="7B6D67DE-9B13-4296-BD7F-0994663D9665">
+                                            <SHORT-NAME>Event_Runnable_Step</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Company/Components/ThrottlePositionActuator/ThrottlePositionActuator_InternalBehavior/Runnable_Step</START-ON-EVENT-REF>
+                                            <PERIOD>0.005</PERIOD>
+                                        </TIMING-EVENT>
+                                        <INIT-EVENT UUID="ED5BD538-6E2F-4CD8-A82D-FD538A6912F1">
+                                            <SHORT-NAME>ThrottlePositionActuator_InitEvent</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Company/Components/ThrottlePositionActuator/ThrottlePositionActuator_InternalBehavior/ThrottlePositionActuator_Init</START-ON-EVENT-REF>
+                                        </INIT-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="B76E2E78-63C6-4CD2-92B7-6510029EC3F1">
+                                            <SHORT-NAME>Runnable_Step</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="ada3f050-75a7-5ce7-c4b4-bf1fa9b7fdb3">
+                                                    <SHORT-NAME>IN_ThrCmd_Percent_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Company/Components/ThrottlePositionActuator/ThrCmd_Percent</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/ThrCmd_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="17cab459-3669-5711-bdba-61607a60d6d1">
+                                                    <SHORT-NAME>OUT_ThrCmd_HwIO_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Company/Components/ThrottlePositionActuator/ThrCmd_HwIO</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/ThrCmd_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <PARAMETER-ACCESSS>
+                                                <PARAMETER-ACCESS UUID="ec733341-9b4b-50fa-f99f-754c70fc3443">
+                                                    <SHORT-NAME>SCALPRM_HBridgeCmd_LkupTbl</SHORT-NAME>
+                                                    <ACCESSED-PARAMETER>
+                                                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Company/Components/ThrottlePositionActuator/ThrottlePositionActuator_InternalBehavior/HBridgeCmd_LkupTbl</LOCAL-PARAMETER-REF>
+                                                    </ACCESSED-PARAMETER>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALPRM-AXIS-SET>
+                                                                    <SW-CALPRM-AXIS>
+                                                                        <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                                        <SW-AXIS-INDIVIDUAL>
+                                                                            <SW-VARIABLE-REFS>
+                                                                                <AUTOSAR-VARIABLE>
+                                                                                    <AUTOSAR-VARIABLE-IREF>
+                                                                                        <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Company/Components/ThrottlePositionActuator/ThrCmd_Percent</PORT-PROTOTYPE-REF>
+                                                                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Interfaces/ThrCmd_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                                                    </AUTOSAR-VARIABLE-IREF>
+                                                                                </AUTOSAR-VARIABLE>
+                                                                            </SW-VARIABLE-REFS>
+                                                                        </SW-AXIS-INDIVIDUAL>
+                                                                    </SW-CALPRM-AXIS>
+                                                                </SW-CALPRM-AXIS-SET>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                </PARAMETER-ACCESS>
+                                            </PARAMETER-ACCESSS>
+                                            <SYMBOL>Runnable_Step</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="BE484016-23A0-47CB-8EF0-612FBEF956E6">
+                                            <SHORT-NAME>ThrottlePositionActuator_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>ThrottlePositionActuator_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SHARED-PARAMETERS>
+                                        <PARAMETER-DATA-PROTOTYPE UUID="afa6f512-0fa1-5fdf-2650-aa96eb4daa44">
+                                            <SHORT-NAME>HBridgeCmd_LkupTbl</SHORT-NAME>
+                                            <CATEGORY>CURVE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/ApplDataTypes/Appl_HBridgeCmd_LkupTbl</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>HBridgeCmd_LkupTbl</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/AUTOSAR_Platform/ImplementationDataTypes/Ground/HBridgeCmd_LkupTbl</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </PARAMETER-DATA-PROTOTYPE>
+                                    </SHARED-PARAMETERS>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
