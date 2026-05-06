@@ -13,7 +13,7 @@ This repository provides the **open-source artifacts, experimental records, and 
 The repository includes:
 - The complete **source code** for the Modelica-based AUTOSAR modeling and code generation framework.
 - **Experimental scripts and records** used for model transformation, evaluation, and performance testing.
-- **Documentation** related to the seven experimental cases reported in the paper.
+- **Documentation** related to the eight experimental cases reported in the paper.
 
 Due to confidentiality requirements, the **final compiled visualization and full-featured UI version** of the tool cannot be made public here.  
 The final integrated product (including visualization, data management, and simulation orchestration interfaces) has been released on the platform below:
@@ -29,11 +29,10 @@ CodeGen4AUTOSAR/
 │
 ├── README.md                           # Project description (this file)
 ├── LICENSE                             # License GPL
-├── requirements.txt                    # Python dependencies for evaluation scripts
 ├── .gitignore                          # Ignore Simulink cache, Modelica build files, temp logs
 │
 ├── docs/                               # 📘 Documentation
-│   ├── matlab_document_record.md        # Record of 7 MATLAB-side experimental cases
+│   ├── matlab_document_record.md        # Record of 8 MATLAB-side experimental cases
 │   ├── performance_screenshots/         # Performance and runtime screenshots
 │   │   ├── simulink/*.png               # Simulink benchmark screenshots
 │   │   └── modelica/*.txt               # Modelica benchmark logs
@@ -43,7 +42,6 @@ CodeGen4AUTOSAR/
 ├── src/                                # 💻 Source code
 │   ├── python/                          # Python utilities and automation scripts
 │   │   ├── eva.py                       # NRMSE metric computation script
-│   │   ├── Script_for_matlab.txt        # MATLAB-side automation commands for simulate the Simulink models.
 │   │   ├── CCodeGenerate/               # AUTOSAR-compliant C code generation module
 │   │   └── convertARXML/                # ARXML transformation and configuration parser
 │   │
@@ -82,6 +80,11 @@ CodeGen4AUTOSAR/
 │   ├── simulation/                      # Output data for evaluation
 │   │   ├── simulink/                    # Simulink CSV outputs after simulation.
 │   │   └── modelica/                    # Modelica CSV outputs after simulation.
+│
+├── external/                           # 🌐 External linked repositories
+│   └── Modelica4AUTOSAR/                # Submodule: Modelica-based visual modeling and multi-domain examples
+│       ↳ https://github.com/xxx/Modelica4AUTOSAR
+│       # Contains detailed Modelica visual modeling cases, domain examples, used in the paper.
 
 ```
 
@@ -104,17 +107,11 @@ Located under `src/python/`, these scripts implement several core utilities:
 - **convertARXML/**  
   Implements **XML structure parsing and translation** for Modelica–AUTOSAR interoperability.
 
-- **Script_for_matlab.txt**  
-  Provides **MATLAB-side commands** for automatic code generation and simulation.
 
-To install Python dependencies:
 
-```bash
-pip install -r requirements.txt
-```
 
 > **Note:** Only partial functionality is available via direct Python execution.  
-> The full AUTOSAR modeling, visualization,configuration, transformation and code generation workflows are integrated in the official toolchain, which centers around a **unified UI framework**.  
+> The full AUTOSAR modeling, visualization, configuration, transformation, and code generation workflows are integrated in the official toolchain, which centers around a **unified UI framework**.  
 > For complete functionality, please download the integrated toolbox from the link above.
 
 ---
@@ -125,7 +122,7 @@ All experimental cases corresponding to the paper are documented in:
 
 📄 **docs/matlab_document_record.md**
 
-This document contains **seven experimental cases**, each with:
+This document contains **eight experimental cases**, each with:
 
 - **AUTOSAR Dictionary** subsection (showing data element definitions)  
 - **AUTOSAR Mappings** subsection (showing mapping screenshots)
