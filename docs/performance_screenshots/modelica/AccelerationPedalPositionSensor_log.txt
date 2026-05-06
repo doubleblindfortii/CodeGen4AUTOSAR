@@ -1,2 +1,0 @@
-Code generation took: 2.429 s
-Code generation took: 0.645 s

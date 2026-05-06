@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Auto generated XML Component Description for model 
+        Model version                : 1.42                
+        Author                       : wumbuk              
+        XML source code generated on : 2026-03-21,13:32:39
+        -->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>DataTypes</SHORT-NAME>
+            <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE UUID="46d9e203-015e-4fac-8a9d-ec0b998f9961">
+                    <SHORT-NAME>Double</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+            </ELEMENTS>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE UUID="41f2a6d8-5d25-4d09-acb9-325f00c20b06">
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Constants</SHORT-NAME>
+                    <ELEMENTS>
+                        <CONSTANT-SPECIFICATION UUID="34e0d5e9-e53a-57d0-0ddf-6294ff4da42e">
+                            <SHORT-NAME>DefaultInitValue_Double</SHORT-NAME>
+                            <VALUE-SPEC>
+                                <NUMERICAL-VALUE-SPECIFICATION>
+                                    <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
+                                    <VALUE>0</VALUE>
+                                </NUMERICAL-VALUE-SPECIFICATION>
+                            </VALUE-SPEC>
+                        </CONSTANT-SPECIFICATION>
+                        <CONSTANT-SPECIFICATION UUID="0a7c964c-db7a-529f-b836-1261c80143fd">
+                            <SHORT-NAME>DefaultInitValu_036fab392deee624</SHORT-NAME>
+                            <VALUE-SPEC>
+                                <ARRAY-VALUE-SPECIFICATION>
+                                    <SHORT-LABEL>DefaultInitValu_036fab392deee624</SHORT-LABEL>
+                                    <ELEMENTS>
+                                        <CONSTANT-REFERENCE>
+                                            <SHORT-LABEL>DefaultInitValu_d172891e92bde674</SHORT-LABEL>
+                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/DataTypes/Constants/DefaultInitValue_Double</CONSTANT-REF>
+                                        </CONSTANT-REFERENCE>
+                                        <CONSTANT-REFERENCE>
+                                            <SHORT-LABEL>DefaultInitValu_2d898f9704c2f030</SHORT-LABEL>
+                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/DataTypes/Constants/DefaultInitValue_Double</CONSTANT-REF>
+                                        </CONSTANT-REFERENCE>
+                                    </ELEMENTS>
+                                </ARRAY-VALUE-SPECIFICATION>
+                            </VALUE-SPEC>
+                        </CONSTANT-SPECIFICATION>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

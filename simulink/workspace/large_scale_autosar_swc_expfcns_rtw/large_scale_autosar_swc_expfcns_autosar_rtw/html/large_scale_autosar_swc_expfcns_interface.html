@@ -1,0 +1,4053 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for large_scale_autosar_swc_expfcns
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for large_scale_autosar_swc_expfcns
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:4')" name="code2model" class="code2model">&lt;Root&gt;/RPort_DE1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:5')" name="code2model" class="code2model">&lt;Root&gt;/RPort_DE1_ErrorStatus</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+ErrorStatus
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:6')" name="code2model" class="code2model">&lt;Root&gt;/RPort_DE2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:50')" name="code2model" class="code2model">&lt;Root&gt;/PPort_DE1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:51')" name="code2model" class="code2model">&lt;Root&gt;/PPort_DE2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:52')" name="code2model" class="code2model">&lt;Root&gt;/PPort_DE3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:53')" name="code2model" class="code2model">&lt;Root&gt;/PPort_DE4</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:128')" name="code2model" class="code2model">&lt;Root&gt;/PPort_4_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:129')" name="code2model" class="code2model">&lt;Root&gt;/PPort_4_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:137')" name="code2model" class="code2model">&lt;Root&gt;/PPort_5_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:138')" name="code2model" class="code2model">&lt;Root&gt;/PPort_5_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:146')" name="code2model" class="code2model">&lt;Root&gt;/PPort_6_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:147')" name="code2model" class="code2model">&lt;Root&gt;/PPort_6_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:155')" name="code2model" class="code2model">&lt;Root&gt;/PPort_7_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:156')" name="code2model" class="code2model">&lt;Root&gt;/PPort_7_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:164')" name="code2model" class="code2model">&lt;Root&gt;/PPort_8_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:165')" name="code2model" class="code2model">&lt;Root&gt;/PPort_8_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:173')" name="code2model" class="code2model">&lt;Root&gt;/PPort_9_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:174')" name="code2model" class="code2model">&lt;Root&gt;/PPort_9_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:182')" name="code2model" class="code2model">&lt;Root&gt;/PPort_10_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:183')" name="code2model" class="code2model">&lt;Root&gt;/PPort_10_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:191')" name="code2model" class="code2model">&lt;Root&gt;/PPort_11_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:192')" name="code2model" class="code2model">&lt;Root&gt;/PPort_11_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:200')" name="code2model" class="code2model">&lt;Root&gt;/PPort_12_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:201')" name="code2model" class="code2model">&lt;Root&gt;/PPort_12_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:209')" name="code2model" class="code2model">&lt;Root&gt;/PPort_13_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:210')" name="code2model" class="code2model">&lt;Root&gt;/PPort_13_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:218')" name="code2model" class="code2model">&lt;Root&gt;/PPort_14_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:219')" name="code2model" class="code2model">&lt;Root&gt;/PPort_14_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:227')" name="code2model" class="code2model">&lt;Root&gt;/PPort_15_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:228')" name="code2model" class="code2model">&lt;Root&gt;/PPort_15_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:236')" name="code2model" class="code2model">&lt;Root&gt;/PPort_16_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:237')" name="code2model" class="code2model">&lt;Root&gt;/PPort_16_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:245')" name="code2model" class="code2model">&lt;Root&gt;/PPort_17_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:246')" name="code2model" class="code2model">&lt;Root&gt;/PPort_17_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:254')" name="code2model" class="code2model">&lt;Root&gt;/PPort_18_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:255')" name="code2model" class="code2model">&lt;Root&gt;/PPort_18_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:263')" name="code2model" class="code2model">&lt;Root&gt;/PPort_19_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:264')" name="code2model" class="code2model">&lt;Root&gt;/PPort_19_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:272')" name="code2model" class="code2model">&lt;Root&gt;/PPort_20_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:273')" name="code2model" class="code2model">&lt;Root&gt;/PPort_20_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:281')" name="code2model" class="code2model">&lt;Root&gt;/PPort_21_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:282')" name="code2model" class="code2model">&lt;Root&gt;/PPort_21_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:299')" name="code2model" class="code2model">&lt;Root&gt;/PPort_22_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:300')" name="code2model" class="code2model">&lt;Root&gt;/PPort_22_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:308')" name="code2model" class="code2model">&lt;Root&gt;/PPort_23_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:309')" name="code2model" class="code2model">&lt;Root&gt;/PPort_23_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:317')" name="code2model" class="code2model">&lt;Root&gt;/PPort_24_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:318')" name="code2model" class="code2model">&lt;Root&gt;/PPort_24_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:326')" name="code2model" class="code2model">&lt;Root&gt;/PPort_25_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:327')" name="code2model" class="code2model">&lt;Root&gt;/PPort_25_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:335')" name="code2model" class="code2model">&lt;Root&gt;/PPort_26_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:336')" name="code2model" class="code2model">&lt;Root&gt;/PPort_26_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:344')" name="code2model" class="code2model">&lt;Root&gt;/PPort_27_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:345')" name="code2model" class="code2model">&lt;Root&gt;/PPort_27_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:353')" name="code2model" class="code2model">&lt;Root&gt;/PPort_28_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:354')" name="code2model" class="code2model">&lt;Root&gt;/PPort_28_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:371')" name="code2model" class="code2model">&lt;Root&gt;/PPort_29_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:372')" name="code2model" class="code2model">&lt;Root&gt;/PPort_29_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:380')" name="code2model" class="code2model">&lt;Root&gt;/PPort_30_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:381')" name="code2model" class="code2model">&lt;Root&gt;/PPort_30_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:389')" name="code2model" class="code2model">&lt;Root&gt;/PPort_31_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:390')" name="code2model" class="code2model">&lt;Root&gt;/PPort_31_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:398')" name="code2model" class="code2model">&lt;Root&gt;/PPort_32_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:399')" name="code2model" class="code2model">&lt;Root&gt;/PPort_32_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:407')" name="code2model" class="code2model">&lt;Root&gt;/PPort_33_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:408')" name="code2model" class="code2model">&lt;Root&gt;/PPort_33_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:416')" name="code2model" class="code2model">&lt;Root&gt;/PPort_34_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:417')" name="code2model" class="code2model">&lt;Root&gt;/PPort_34_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:425')" name="code2model" class="code2model">&lt;Root&gt;/PPort_35_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:426')" name="code2model" class="code2model">&lt;Root&gt;/PPort_35_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:434')" name="code2model" class="code2model">&lt;Root&gt;/PPort_36_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:435')" name="code2model" class="code2model">&lt;Root&gt;/PPort_36_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:443')" name="code2model" class="code2model">&lt;Root&gt;/PPort_37_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:444')" name="code2model" class="code2model">&lt;Root&gt;/PPort_37_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:452')" name="code2model" class="code2model">&lt;Root&gt;/PPort_38_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:453')" name="code2model" class="code2model">&lt;Root&gt;/PPort_38_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:461')" name="code2model" class="code2model">&lt;Root&gt;/PPort_39_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:462')" name="code2model" class="code2model">&lt;Root&gt;/PPort_39_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:470')" name="code2model" class="code2model">&lt;Root&gt;/PPort_40_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:471')" name="code2model" class="code2model">&lt;Root&gt;/PPort_40_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:542')" name="code2model" class="code2model">&lt;Root&gt;/PPort_41_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:543')" name="code2model" class="code2model">&lt;Root&gt;/PPort_41_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:544')" name="code2model" class="code2model">&lt;Root&gt;/PPort_42_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:545')" name="code2model" class="code2model">&lt;Root&gt;/PPort_42_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:546')" name="code2model" class="code2model">&lt;Root&gt;/PPort_43_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:547')" name="code2model" class="code2model">&lt;Root&gt;/PPort_43_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:548')" name="code2model" class="code2model">&lt;Root&gt;/PPort_44_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:549')" name="code2model" class="code2model">&lt;Root&gt;/PPort_44_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:550')" name="code2model" class="code2model">&lt;Root&gt;/PPort_45_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:551')" name="code2model" class="code2model">&lt;Root&gt;/PPort_45_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:552')" name="code2model" class="code2model">&lt;Root&gt;/PPort_46_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:553')" name="code2model" class="code2model">&lt;Root&gt;/PPort_46_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:554')" name="code2model" class="code2model">&lt;Root&gt;/PPort_47_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:555')" name="code2model" class="code2model">&lt;Root&gt;/PPort_47_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:556')" name="code2model" class="code2model">&lt;Root&gt;/PPort_48_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:557')" name="code2model" class="code2model">&lt;Root&gt;/PPort_48_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:558')" name="code2model" class="code2model">&lt;Root&gt;/PPort_49_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:559')" name="code2model" class="code2model">&lt;Root&gt;/PPort_49_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:560')" name="code2model" class="code2model">&lt;Root&gt;/PPort_50_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:561')" name="code2model" class="code2model">&lt;Root&gt;/PPort_50_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:632')" name="code2model" class="code2model">&lt;Root&gt;/PPort_51_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:633')" name="code2model" class="code2model">&lt;Root&gt;/PPort_51_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:634')" name="code2model" class="code2model">&lt;Root&gt;/PPort_52_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:635')" name="code2model" class="code2model">&lt;Root&gt;/PPort_52_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:636')" name="code2model" class="code2model">&lt;Root&gt;/PPort_53_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:637')" name="code2model" class="code2model">&lt;Root&gt;/PPort_53_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:638')" name="code2model" class="code2model">&lt;Root&gt;/PPort_54_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:639')" name="code2model" class="code2model">&lt;Root&gt;/PPort_54_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:640')" name="code2model" class="code2model">&lt;Root&gt;/PPort_55_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:641')" name="code2model" class="code2model">&lt;Root&gt;/PPort_55_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:642')" name="code2model" class="code2model">&lt;Root&gt;/PPort_56_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:643')" name="code2model" class="code2model">&lt;Root&gt;/PPort_56_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:644')" name="code2model" class="code2model">&lt;Root&gt;/PPort_57_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:645')" name="code2model" class="code2model">&lt;Root&gt;/PPort_57_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:646')" name="code2model" class="code2model">&lt;Root&gt;/PPort_58_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:647')" name="code2model" class="code2model">&lt;Root&gt;/PPort_58_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:648')" name="code2model" class="code2model">&lt;Root&gt;/PPort_59_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:649')" name="code2model" class="code2model">&lt;Root&gt;/PPort_59_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:650')" name="code2model" class="code2model">&lt;Root&gt;/PPort_60_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:651')" name="code2model" class="code2model">&lt;Root&gt;/PPort_60_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:722')" name="code2model" class="code2model">&lt;Root&gt;/PPort_61_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:723')" name="code2model" class="code2model">&lt;Root&gt;/PPort_61_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:724')" name="code2model" class="code2model">&lt;Root&gt;/PPort_62_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:725')" name="code2model" class="code2model">&lt;Root&gt;/PPort_62_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:726')" name="code2model" class="code2model">&lt;Root&gt;/PPort_63_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:727')" name="code2model" class="code2model">&lt;Root&gt;/PPort_63_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:728')" name="code2model" class="code2model">&lt;Root&gt;/PPort_64_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:729')" name="code2model" class="code2model">&lt;Root&gt;/PPort_64_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:730')" name="code2model" class="code2model">&lt;Root&gt;/PPort_65_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:731')" name="code2model" class="code2model">&lt;Root&gt;/PPort_65_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:732')" name="code2model" class="code2model">&lt;Root&gt;/PPort_66_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:733')" name="code2model" class="code2model">&lt;Root&gt;/PPort_66_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:734')" name="code2model" class="code2model">&lt;Root&gt;/PPort_67_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:735')" name="code2model" class="code2model">&lt;Root&gt;/PPort_67_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:736')" name="code2model" class="code2model">&lt;Root&gt;/PPort_68_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:737')" name="code2model" class="code2model">&lt;Root&gt;/PPort_68_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:738')" name="code2model" class="code2model">&lt;Root&gt;/PPort_69_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:739')" name="code2model" class="code2model">&lt;Root&gt;/PPort_69_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:740')" name="code2model" class="code2model">&lt;Root&gt;/PPort_70_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:741')" name="code2model" class="code2model">&lt;Root&gt;/PPort_70_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:812')" name="code2model" class="code2model">&lt;Root&gt;/PPort_71_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:813')" name="code2model" class="code2model">&lt;Root&gt;/PPort_71_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:814')" name="code2model" class="code2model">&lt;Root&gt;/PPort_72_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:815')" name="code2model" class="code2model">&lt;Root&gt;/PPort_72_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:816')" name="code2model" class="code2model">&lt;Root&gt;/PPort_73_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:817')" name="code2model" class="code2model">&lt;Root&gt;/PPort_73_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:818')" name="code2model" class="code2model">&lt;Root&gt;/PPort_74_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:819')" name="code2model" class="code2model">&lt;Root&gt;/PPort_74_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:820')" name="code2model" class="code2model">&lt;Root&gt;/PPort_75_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:822')" name="code2model" class="code2model">&lt;Root&gt;/PPort_76_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:823')" name="code2model" class="code2model">&lt;Root&gt;/PPort_76_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:824')" name="code2model" class="code2model">&lt;Root&gt;/PPort_77_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:825')" name="code2model" class="code2model">&lt;Root&gt;/PPort_77_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:826')" name="code2model" class="code2model">&lt;Root&gt;/PPort_78_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:827')" name="code2model" class="code2model">&lt;Root&gt;/PPort_78_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:828')" name="code2model" class="code2model">&lt;Root&gt;/PPort_79_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:829')" name="code2model" class="code2model">&lt;Root&gt;/PPort_79_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:830')" name="code2model" class="code2model">&lt;Root&gt;/PPort_80_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:831')" name="code2model" class="code2model">&lt;Root&gt;/PPort_80_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:902')" name="code2model" class="code2model">&lt;Root&gt;/PPort_81_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:903')" name="code2model" class="code2model">&lt;Root&gt;/PPort_81_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:904')" name="code2model" class="code2model">&lt;Root&gt;/PPort_82_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:905')" name="code2model" class="code2model">&lt;Root&gt;/PPort_82_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:906')" name="code2model" class="code2model">&lt;Root&gt;/PPort_83_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:907')" name="code2model" class="code2model">&lt;Root&gt;/PPort_83_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:908')" name="code2model" class="code2model">&lt;Root&gt;/PPort_84_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:909')" name="code2model" class="code2model">&lt;Root&gt;/PPort_84_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:910')" name="code2model" class="code2model">&lt;Root&gt;/PPort_85_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:911')" name="code2model" class="code2model">&lt;Root&gt;/PPort_85_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:912')" name="code2model" class="code2model">&lt;Root&gt;/PPort_86_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:913')" name="code2model" class="code2model">&lt;Root&gt;/PPort_86_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:914')" name="code2model" class="code2model">&lt;Root&gt;/PPort_87_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:915')" name="code2model" class="code2model">&lt;Root&gt;/PPort_87_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:916')" name="code2model" class="code2model">&lt;Root&gt;/PPort_88_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:917')" name="code2model" class="code2model">&lt;Root&gt;/PPort_88_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:918')" name="code2model" class="code2model">&lt;Root&gt;/PPort_89_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:919')" name="code2model" class="code2model">&lt;Root&gt;/PPort_89_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:920')" name="code2model" class="code2model">&lt;Root&gt;/PPort_90_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:921')" name="code2model" class="code2model">&lt;Root&gt;/PPort_90_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:992')" name="code2model" class="code2model">&lt;Root&gt;/PPort_91_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:993')" name="code2model" class="code2model">&lt;Root&gt;/PPort_91_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:994')" name="code2model" class="code2model">&lt;Root&gt;/PPort_92_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:995')" name="code2model" class="code2model">&lt;Root&gt;/PPort_92_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:996')" name="code2model" class="code2model">&lt;Root&gt;/PPort_93_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:997')" name="code2model" class="code2model">&lt;Root&gt;/PPort_93_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:998')" name="code2model" class="code2model">&lt;Root&gt;/PPort_94_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:999')" name="code2model" class="code2model">&lt;Root&gt;/PPort_94_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1000')" name="code2model" class="code2model">&lt;Root&gt;/PPort_95_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1001')" name="code2model" class="code2model">&lt;Root&gt;/PPort_95_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1002')" name="code2model" class="code2model">&lt;Root&gt;/PPort_96_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1003')" name="code2model" class="code2model">&lt;Root&gt;/PPort_96_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1004')" name="code2model" class="code2model">&lt;Root&gt;/PPort_97_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1005')" name="code2model" class="code2model">&lt;Root&gt;/PPort_97_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1006')" name="code2model" class="code2model">&lt;Root&gt;/PPort_98_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1007')" name="code2model" class="code2model">&lt;Root&gt;/PPort_98_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1008')" name="code2model" class="code2model">&lt;Root&gt;/PPort_99_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1009')" name="code2model" class="code2model">&lt;Root&gt;/PPort_99_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1010')" name="code2model" class="code2model">&lt;Root&gt;/PPort_100_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1011')" name="code2model" class="code2model">&lt;Root&gt;/PPort_100_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1082')" name="code2model" class="code2model">&lt;Root&gt;/PPort_101_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1083')" name="code2model" class="code2model">&lt;Root&gt;/PPort_101_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1084')" name="code2model" class="code2model">&lt;Root&gt;/PPort_102_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1085')" name="code2model" class="code2model">&lt;Root&gt;/PPort_102_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1086')" name="code2model" class="code2model">&lt;Root&gt;/PPort_103_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1087')" name="code2model" class="code2model">&lt;Root&gt;/PPort_103_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1088')" name="code2model" class="code2model">&lt;Root&gt;/PPort_104_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1089')" name="code2model" class="code2model">&lt;Root&gt;/PPort_104_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1090')" name="code2model" class="code2model">&lt;Root&gt;/PPort_105_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1091')" name="code2model" class="code2model">&lt;Root&gt;/PPort_105_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1092')" name="code2model" class="code2model">&lt;Root&gt;/PPort_106_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1093')" name="code2model" class="code2model">&lt;Root&gt;/PPort_106_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1094')" name="code2model" class="code2model">&lt;Root&gt;/PPort_107_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1095')" name="code2model" class="code2model">&lt;Root&gt;/PPort_107_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1096')" name="code2model" class="code2model">&lt;Root&gt;/PPort_108_1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1097')" name="code2model" class="code2model">&lt;Root&gt;/PPort_108_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('large_scale_autosar_swc_expfcns:1102')" name="code2model" class="code2model">&lt;Root&gt;/PPort_75_2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+int8_T
+</td>
+<td width="10%" align="right" valign="top">
+[2]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<p>
+No interface/tunable parameters in model.
+</p>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

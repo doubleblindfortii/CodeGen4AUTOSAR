@@ -1,0 +1,5 @@
+Code generation took: 0.783 s
+Code generation took: 0.879 s
+Code generation took: 0.809 s
+Code generation took: 0.836 s
+Code generation took: 0.742 s

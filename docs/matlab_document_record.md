@@ -9,7 +9,10 @@ It serves as a visual reference for:
 - The **AUTOSAR Mappings** between Simulink elements and AUTOSAR software components.
 - Comparison against the corresponding **Modelica-based AUTOSAR models** presented in the M2 library.
 
-All seven example models are derived from official AUTOSAR Blockset examples and are used for **functional equivalence testing**, **semantic mapping validation**, and **NRMSE evaluation**.
+Seven example models are derived from official AUTOSAR Blockset examples, 
+and one additional large-scale model is constructed for scalability evaluation， and they are used for **functional equivalence testing**, **semantic mapping validation**, and **NRMSE evaluation**.
+
+In total, eight experimental cases are included.
 
 ---
 
@@ -24,6 +27,7 @@ This record includes seven representative automotive AUTOSAR examples:
 5. `autosar_swc_pedal_sensor` — Pedal position sensing component
 6. `autosar_swc_controller` — Controller component for actuator coordination
 7. `autosar_swc_actuator` — Actuator control component
+8. `large_scale_autosar_swc_expfcns` - a large-scale AUTOSAR application-layer case, is constructed with 108 runnables, 211 PPorts, and 109 IRVs. It forms a high-density, deeply interconnected signal-processing chain in which runnables perform transformations and exchange data via IRVs.
 
 Each example corresponds to one case used in performance evaluation and NRMSE comparison.  
 For each example, this document records two sections:
@@ -162,7 +166,7 @@ https://ww2.mathworks.cn/help/autosar/ug/example-import-autosar-composition-to-s
 
 #### AUTOSAR Mappings
 ![](example_pics/5_13.png)
-![](example_pics/5_15.png)
+![](example_pics/5_14.png)
 ![](example_pics/5_15.png)
 
 
@@ -213,20 +217,42 @@ https://ww2.mathworks.cn/help/autosar/ug/example-import-autosar-composition-to-s
 ![](example_pics/7_13.png)
 
 #### AUTOSAR Mappings
-*(Insert screenshot of AUTOSAR Mappings interface here, e.g. `images/autosar_swc_actuator_mappings.png`)*
+
 ![](example_pics/7_14.png)
 ![](example_pics/7_15.png)
 ![](example_pics/7_16.png)
 ![](example_pics/7_17.png)
 ---
 
+
+### 8. large_scale_autosar_swc_expfcns
+This model is manually extended and is used for scalability experiments. It contains 108 runnable entities, along with a large number of ports and inter-runnable variables (IRVs), and is used to evaluate scalability.
+
+#### Simulink model
+![](example_pics/8_1.png)
+![](example_pics/8_2.png)
+
+
+#### AUTOSAR Dictionary
+![](example_pics/8_3.png)
+![](example_pics/8_4.png)
+![](example_pics/8_5.png)
+![](example_pics/8_6.png)
+![](example_pics/8_7.png)
+
+#### AUTOSAR Mappings
+![](example_pics/8_8.png)
+![](example_pics/8_9.png)
+![](example_pics/8_10.png)
+
+
 ## 📎 Notes
 
-- All screenshots correspond to official MATLAB/Simulink AUTOSAR Blockset examples.
-- These records are used for comparison and validation with the **Modelica-based AUTOSAR modeling framework** (`M2/Examples`).
-- For details on ARXML and C code generation results, see the `modelica_generate/` directory.
-- The naming convention follows the same case identifiers as in the experimental evaluation section of the paper.
+- The first seven models are from official examples of the AUTOSAR Blockset, while the eighth model is created for scalability experiments.
+- These records are used for comparison and validation with the Modelica-based AUTOSAR modeling framework (`M2/Examples`).
+- For details on ARXML and C code generation results, refer to the modelica_generate/ directory.
+- The naming convention follows the same case identifiers as used in the experimental evaluation section of the paper.
 
 ---
 
-_Last updated: October 2025_
+Last updated: March 2026
