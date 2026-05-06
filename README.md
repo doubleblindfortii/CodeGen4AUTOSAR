@@ -122,7 +122,14 @@ Located under `src/python/`, these scripts implement several core utilities:
 
 --- 
 ## 🔬 Minimal Working Example
+To help users quickly understand and reproduce the workflow, we provide a minimal working example based on the `autosar_swc` case.
 
+This example demonstrates the complete pipeline from Simulink modeling to Modelica-based reconstruction and final evaluation.
+
+### Step 1: Simulink Model
+
+- Open the model: `simulink/source_models/native/autosar_swc.slx`
+- 
 
 
 
