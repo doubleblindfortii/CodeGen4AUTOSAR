@@ -88,11 +88,17 @@ CodeGen4AUTOSAR/
 
 ```
 
+
+
+
 # 🧩 Functional Description
 
 This repository serves as the research and reproducibility version of the **AUTOSAR–Modelica integration framework**.
 
 ---
+
+
+
 
 ## 🔹 Python Components
 
@@ -114,6 +120,12 @@ Located under `src/python/`, these scripts implement several core utilities:
 > The full AUTOSAR modeling, visualization, configuration, transformation, and code generation workflows are integrated in the official toolchain, which centers around a **unified UI framework**.  
 > For complete functionality, please download the integrated toolbox from the link above.
 
+--- 
+## 🔬 Minimal Working Example
+
+
+
+
 ---
 
 ## 📚 Documentation and Experimental Records
@@ -131,6 +143,9 @@ Performance comparison screenshots, NRMSE computation outputs, and ARXML statist
 `docs/performance_screenshots/` and `docs/paper_related/` directories.
 
 ---
+
+
+
 
 ## 🧠 Citation
 
