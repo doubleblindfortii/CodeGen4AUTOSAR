@@ -1,22 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#
-# Generated Tue May 21 17:26:16 2024 by generateDS.py version 2.41.5.
-# Python 3.7.16 (default, Jan 17 2023, 16:06:28) [MSC v.1916 64 bit (AMD64)]
-#
-# Command line options:
-#   ('-o', 'test.py')
-#
-# Command line arguments:
-#   autosar_configuration_codegen.xsd
-#
-# Command line:
-#   generateDS.py -o "test.py" autosar_configuration_codegen.xsd
-#
-# Current working directory (os.getcwd()):
-#   generateDS-2.41.5
-#
 
 import sys
 try:
