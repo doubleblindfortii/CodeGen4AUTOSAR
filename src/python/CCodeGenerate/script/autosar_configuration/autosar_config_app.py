@@ -1,23 +1,5 @@
 #!/usr/bin/env python
 
-#
-# Generated Sun Sep 10 16:24:57 2023 by generateDS.py version 2.41.5.
-# Python 3.8.3 (default, Jul  2 2020, 16:21:59)  [GCC 7.3.0]
-#
-# Command line options:
-#   ('-o', 'autosar_config_api.py')
-#   ('-s', 'autosar_config_app.py')
-#   ('--super', 'autosar_config_api')
-#
-# Command line arguments:
-#   autosar_configuration_codegen.xsd
-#
-# Command line:
-#   /home/yph/anaconda3/bin/generateDS.py -o "autosar_config_api.py" -s "autosar_config_app.py" --super="autosar_config_api" autosar_configuration_codegen.xsd
-#
-# Current working directory (os.getcwd()):
-#   autosar_config_xml
-#
 
 import os
 import sys
